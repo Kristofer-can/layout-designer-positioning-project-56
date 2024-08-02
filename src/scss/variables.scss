@@ -1,0 +1,37 @@
+$base-color-text: #cacaca;
+$base-color-background: #08020d;
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  src: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+}
+
+body {
+  font: "Roboto" 16px/1.5px;
+  color: $base-color-text;
+  width: 1440px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin headline($size, $weight, $height, $transform) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  text-transform: $transform;
+}
+
+.desktop-h1 {
+  @include headline(60px, bold, 90px, uppercase);
+}
+.desktop-h2 {
+  @include headline(38px, bold, 57px, uppercase);
+}
+.mobile-h1 {
+  @include headline(30px, bold, 45px, uppercase);
+}
+.mobile-h2 {
+  @include headline(18px, bold, 27px, uppercase);
+}

@@ -14,13 +14,17 @@
   .fotter-top {
     width: 1200px;
     height: 25px;
-    padding-top: 25px;
-    display: grid;
+    padding-top: 20px;
+    // display: grid;
+    display: flex;
+    flex-direction: row;
+
     align-items: center;
 
-    grid-template-columns: 1fr 2fr 2fr;
-    gap: 30px;
+    // grid-template-columns: 1fr 2fr 2fr;
+    // gap: 30px;
     .logo {
+      margin-left: 0px;
       font-size: 11px;
       line-height: 16.5px;
       display: grid;
@@ -38,11 +42,15 @@
     }
 
     .menu {
+      margin-left: 90px;
+      margin-right: 59px;
+      //   padding: 0;
       display: grid;
-      grid-auto-flow: column;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 25px;
       font-size: 11px;
       line-height: 16.5px;
-      grid-column: 2/3;
+      //   grid-column: 2/3;
 
       a {
         display: block;
@@ -57,11 +65,12 @@
       }
     }
     .searc-p {
+      margin-left: 277px;
       justify-content: end;
       justify-items: end;
       display: grid;
       grid-column: 1fr;
-      grid-column: 3/4;
+      //   grid-column: 3/4;
       .search {
         justify-content: end;
         border-radius: 50px;
@@ -86,7 +95,7 @@
     width: 100%;
     height: min-content;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 146px;
 
     & * {
       margin: 0px;
@@ -94,21 +103,22 @@
     .fotter-indication {
       font-size: 16px;
       line-height: 24px;
-      margin-top: 21px;
+      margin-top: 31px;
     }
     .form-name-email {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      margin: 0px 314px;
-      gap: 16px;
+      margin: 0px 305px;
+      margin-top: 17px;
+      column-gap: 24px;
 
       .input-name,
       .input-email {
         min-height: 50px;
         min-width: 270px;
         padding-left: 20px;
-        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         border-radius: 3px;
         border: 2px solid #cacaca;
         box-sizing: border-box;
@@ -118,26 +128,42 @@
         line-height: 16.41px;
         color: #ffffff;
         text-align: left;
-        input.input-name::placeholder {
-          color: #ffffff;
-        }
-        input.input-name::-webkit-input-placeholder {
-          color: #ffffff;
-        }
-        input.input-name::-moz-placeholder {
-          color: #ffffff;
-        }
-        input.input-name:-moz-placeholder {
-          color: #ffffff;
-        }
-        input.input-name:-ms-input-placeholder {
-          color: #ffffff;
-        }
+      }
+      input.input-name::placeholder {
+        color: #ffffff;
+      }
+      input.input-name::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+      input.input-name::-moz-placeholder {
+        color: #ffffff;
+      }
+      input.input-name:-moz-placeholder {
+        color: #ffffff;
+      }
+      input.input-name:-ms-input-placeholder {
+        color: #ffffff;
+      }
+
+      input.input-email::placeholder {
+        color: #ffffff;
+      }
+      input.input-email::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+      input.input-email::-moz-placeholder {
+        color: #ffffff;
+      }
+      input.input-email:-moz-placeholder {
+        color: #ffffff;
+      }
+      input.input-email:-ms-input-placeholder {
+        color: #ffffff;
       }
 
       .form-button {
         height: 57px;
-        width: 570px;
+        min-width: 570px;
         font-family: Arial;
         font-size: 13.3px;
         font-weight: 400;

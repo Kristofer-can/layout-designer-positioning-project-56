@@ -29,9 +29,19 @@ body {
 .desktop-h2 {
   @include headline(38px, bold, 57px, uppercase);
 }
-.mobile-h1 {
-  @include headline(30px, bold, 45px, uppercase);
-}
-.mobile-h2 {
-  @include headline(18px, bold, 27px, uppercase);
+
+@media only screen and (max-width: 414px) {
+  body {
+    font: "Roboto" 11px/12.89px;
+    font-weight: 700;
+    width: 414px;
+    text-align: left;
+  }
+
+  .desktop-h1 {
+    @include headline(30px, bold, 45px, uppercase);
+  }
+  .desktop-h2 {
+    @include headline(18px, bold, 27px, uppercase);
+  }
 }

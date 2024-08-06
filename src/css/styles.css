@@ -26,20 +26,26 @@ body {
   text-transform: uppercase;
 }
 
-.mobile-h1 {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 45px;
-  text-transform: uppercase;
+@media only screen and (max-width: 414px) {
+  body {
+    font: "Roboto" 11px/12.89px;
+    font-weight: 700;
+    width: 414px;
+    text-align: left;
+  }
+  .desktop-h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+  .desktop-h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
 }
-
-.mobile-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 27px;
-  text-transform: uppercase;
-}
-
 .white {
   color: white;
 }
@@ -51,8 +57,7 @@ body {
 #page-descriptionnn {
   background-image: url("../images/banner.png");
   position: relative;
-  min-width: 1200px;
-  max-width: 1440px;
+  width: 1440px;
   height: 750px;
   background-position: center;
   background-size: cover;
@@ -121,7 +126,7 @@ body {
   justify-content: end;
   border-radius: 50px;
   height: 25px;
-  display: inline-block;
+  box-sizing: border-box;
   padding: 5px 10px;
   width: 248px;
   background: #3c3b3d;
@@ -219,6 +224,110 @@ body {
   justify-items: stretch;
   grid-column: 1/3;
   border: 1px solid #34c176;
+}
+
+@media only screen and (max-width: 414px) {
+  #page-descriptionnn {
+    height: 851px;
+    width: 414px;
+    max-width: 414px;
+  }
+  .fotter {
+    width: 374px;
+    margin: 0 20px;
+  }
+  .fotter .fotter-top {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .fotter .fotter-top .logo {
+    margin-left: 0px;
+    font-size: 11px;
+    height: 24px;
+    line-height: 16.5px;
+    grid-column-gap: 16px;
+    color: #ffffff;
+  }
+  .fotter .fotter-top .menu {
+    margin-left: 0px;
+    margin-top: 17px;
+    width: 374px;
+    height: 61px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+    font-size: 11px;
+    line-height: 12.89px;
+  }
+  .fotter .fotter-top .searc-p {
+    margin-top: 18px;
+    margin-left: 0px;
+    grid-template-columns: 1fr;
+  }
+  .fotter .fotter-top .searc-p .search {
+    width: 374px;
+  }
+  .fotter .page-description {
+    width: 374px;
+    max-width: 374px;
+    height: min-content;
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom: 201px;
+    padding: 0;
+  }
+  .fotter .page-description * {
+    margin: 0px;
+    width: 374px;
+  }
+  .fotter .page-description .fotter-indication {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+  .fotter .page-description .form-name-email {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 374px;
+    height: 205px;
+    column-gap: 0rem;
+    margin: 0px;
+    margin-top: 16px;
+  }
+  .fotter .page-description .form-name-email .input-name,
+  .fotter .page-description .form-name-email .input-email {
+    min-height: 50px;
+    width: 374px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 2px solid #cacaca;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    color: #ffffff;
+    text-align: left;
+    grid-column: 1;
+  }
+  .fotter .page-description .form-name-email .form-button {
+    height: 57px;
+    width: 374px;
+    font-family: Arial;
+    font-size: 13.3px;
+    font-weight: 400;
+    line-height: 15.29px;
+    box-sizing: border-box;
+    padding: 21px 0px;
+    border-radius: 5px;
+    background: #34c176;
+    justify-items: stretch;
+    border: 1px solid #34c176;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

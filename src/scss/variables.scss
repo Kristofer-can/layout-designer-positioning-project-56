@@ -1,5 +1,12 @@
 $base-color-text: #cacaca;
 $base-color-background: #08020d;
+$color-text-white: #ffffff;
+$color-text-light-gray: #e0e0e0;
+$color-text-dark-gray: #3c3b3d;
+$background-color-green: #34c176;
+$background-color-orange: #f89202;
+$background-color-violet: #5328a1;
+$background-color-brown: #95390c;
 
 @font-face {
   font-family: "Roboto", sans-serif;
@@ -23,11 +30,65 @@ body {
   text-transform: $transform;
 }
 
-.desktop-h1 {
+h1 {
   @include headline(60px, bold, 90px, uppercase);
 }
-.desktop-h2 {
+h2 {
   @include headline(38px, bold, 57px, uppercase);
+}
+h3 {
+  @include headline(24px, normal, 45px, uppercase);
+}
+h3 .capitalize {
+  @include headline(24px, normal, 45px, capitalize);
+}
+h3 .capitalize-bold {
+  @include headline(24px, bold, 45px, capitalize);
+}
+h4 {
+  @include headline(18px, bold, 27px, uppercase);
+}
+h4 .capitalize-bold {
+  @include headline(18px, bold, 27px, capitalize);
+}
+
+.text-size-7 {
+  @include headline(64px, normal, 96px, none);
+}
+.text-size-6 {
+  @include headline(56px, normal, 84px, none);
+}
+.text-size-5 {
+  @include headline(48px, normal, 72px, none);
+}
+.text-size-4 {
+  @include headline(40px, normal, 60px, none);
+}
+.text-size-3 {
+  @include headline(32px, normal, 48px, none);
+}
+.text-size-2 {
+  @include headline(24px, normal, 36px, none);
+}
+.text-size-1 {
+  @include headline(16px, normal, 24px, none);
+}
+.text-small {
+  @include headline(12.8px, normal, 19.2px, none);
+}
+.text-small-bold {
+  @include headline(12.8px, bold, 19.2px, none);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 414px) {
@@ -38,10 +99,16 @@ body {
     text-align: left;
   }
 
-  .desktop-h1 {
+  h1 {
     @include headline(30px, bold, 45px, uppercase);
   }
-  .desktop-h2 {
+  h2 {
     @include headline(18px, bold, 27px, uppercase);
+  }
+  h3 {
+    @include headline(16px, bold, 24px, uppercase);
+  }
+  h4 {
+    @include headline(18px, bold, 24px, uppercase);
   }
 }

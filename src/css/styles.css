@@ -1,3 +1,5 @@
+@import url("variables.scss");
+@import url("variables.scss");
 @font-face {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -12,18 +14,127 @@ body {
   padding: 0;
 }
 
-.desktop-h1 {
+h1 {
   font-size: 60px;
   font-weight: bold;
   line-height: 90px;
   text-transform: uppercase;
 }
 
-.desktop-h2 {
+h2 {
   font-size: 38px;
   font-weight: bold;
   line-height: 57px;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+h3 .capitalize {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+h3 .capitalize-bold {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+h4 .capitalize-bold {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+
+.text-size-7 {
+  font-size: 64px;
+  font-weight: normal;
+  line-height: 96px;
+  text-transform: none;
+}
+
+.text-size-6 {
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 84px;
+  text-transform: none;
+}
+
+.text-size-5 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 72px;
+  text-transform: none;
+}
+
+.text-size-4 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 60px;
+  text-transform: none;
+}
+
+.text-size-3 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.text-size-2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.text-size-1 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.text-small {
+  font-size: 12.8px;
+  font-weight: normal;
+  line-height: 19.2px;
+  text-transform: none;
+}
+
+.text-small-bold {
+  font-size: 12.8px;
+  font-weight: bold;
+  line-height: 19.2px;
+  text-transform: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 414px) {
@@ -33,16 +144,28 @@ body {
     width: 414px;
     text-align: left;
   }
-  .desktop-h1 {
+  h1 {
     font-size: 30px;
     font-weight: bold;
     line-height: 45px;
     text-transform: uppercase;
   }
-  .desktop-h2 {
+  h2 {
     font-size: 18px;
     font-weight: bold;
     line-height: 27px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
     text-transform: uppercase;
   }
 }
@@ -54,7 +177,7 @@ body {
   text-transform: uppercase;
 }
 
-#page-descriptionnn {
+#page-description {
   background-image: url("../images/banner.png");
   position: relative;
   width: 1440px;
@@ -113,7 +236,7 @@ body {
   color: #cacaca;
 }
 .fotter .fotter-top .menu .music {
-  color: white;
+  color: #ffffff;
 }
 .fotter .fotter-top .searc-p {
   margin-left: 451px;
@@ -121,6 +244,7 @@ body {
   justify-items: end;
   display: grid;
   grid-column: 1fr;
+  color: #757575;
 }
 .fotter .fotter-top .searc-p .search {
   justify-content: end;
@@ -137,7 +261,7 @@ body {
   line-height: 15.29px;
   text-align: left;
 }
-.fotter .page-description {
+.fotter .description {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4;
@@ -146,15 +270,15 @@ body {
   text-align: center;
   margin-top: 146px;
 }
-.fotter .page-description * {
+.fotter .description * {
   margin: 0px;
 }
-.fotter .page-description .fotter-indication {
+.fotter .description .fotter-indication {
   font-size: 16px;
   line-height: 24px;
   margin-top: 31px;
 }
-.fotter .page-description .form-name-email {
+.fotter .description .form-name-email {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -164,8 +288,8 @@ body {
   margin: 0px 305px;
   margin-top: 17px;
 }
-.fotter .page-description .form-name-email .input-name,
-.fotter .page-description .form-name-email .input-email {
+.fotter .description .form-name-email .input-name,
+.fotter .description .form-name-email .input-email {
   min-height: 50px;
   width: 273px;
   padding-left: 20px;
@@ -180,37 +304,37 @@ body {
   color: #ffffff;
   text-align: left;
 }
-.fotter .page-description .form-name-email input.input-name::placeholder {
+.fotter .description .form-name-email input.input-name::placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-name::-webkit-input-placeholder {
+.fotter .description .form-name-email input.input-name::-webkit-input-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-name::-moz-placeholder {
+.fotter .description .form-name-email input.input-name::-moz-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-name:-moz-placeholder {
+.fotter .description .form-name-email input.input-name:-moz-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-name:-ms-input-placeholder {
+.fotter .description .form-name-email input.input-name:-ms-input-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-email::placeholder {
+.fotter .description .form-name-email input.input-email::placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-email::-webkit-input-placeholder {
+.fotter .description .form-name-email input.input-email::-webkit-input-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-email::-moz-placeholder {
+.fotter .description .form-name-email input.input-email::-moz-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-email:-moz-placeholder {
+.fotter .description .form-name-email input.input-email:-moz-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email input.input-email:-ms-input-placeholder {
+.fotter .description .form-name-email input.input-email:-ms-input-placeholder {
   color: #ffffff;
 }
-.fotter .page-description .form-name-email .form-button {
+.fotter .description .form-name-email .form-button {
   height: 57px;
   width: 570px;
   font-family: Arial;
@@ -227,7 +351,7 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
-  #page-descriptionnn {
+  #page-description {
     height: 851px;
     width: 414px;
     max-width: 414px;
@@ -270,7 +394,7 @@ body {
   .fotter .fotter-top .searc-p .search {
     width: 374px;
   }
-  .fotter .page-description {
+  .fotter .description {
     width: 374px;
     max-width: 374px;
     height: min-content;
@@ -279,16 +403,16 @@ body {
     margin-bottom: 201px;
     padding: 0;
   }
-  .fotter .page-description * {
+  .fotter .description * {
     margin: 0px;
     width: 374px;
   }
-  .fotter .page-description .fotter-indication {
+  .fotter .description .fotter-indication {
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
   }
-  .fotter .page-description .form-name-email {
+  .fotter .description .form-name-email {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -298,8 +422,8 @@ body {
     margin: 0px;
     margin-top: 16px;
   }
-  .fotter .page-description .form-name-email .input-name,
-  .fotter .page-description .form-name-email .input-email {
+  .fotter .description .form-name-email .input-name,
+  .fotter .description .form-name-email .input-email {
     min-height: 50px;
     width: 374px;
     padding-left: 20px;
@@ -314,7 +438,37 @@ body {
     text-align: left;
     grid-column: 1;
   }
-  .fotter .page-description .form-name-email .form-button {
+  .fotter .description .form-name-email input.input-name::placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-name::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-name::-moz-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-name:-moz-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-name:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-email::placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-email::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-email::-moz-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-email:-moz-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email input.input-email:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .fotter .description .form-name-email .form-button {
     height: 57px;
     width: 374px;
     font-family: Arial;
@@ -327,6 +481,164 @@ body {
     background: #34c176;
     justify-items: stretch;
     border: 1px solid #34c176;
+  }
+}
+#page-pricing {
+  margin: 0px;
+  padding: 0px;
+  background: #08020d;
+  height: 908px;
+}
+#page-pricing .section-pricing {
+  padding-top: 100px;
+  margin-left: 122px;
+}
+#page-pricing .section-pricing * {
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+#page-pricing .section-pricing .pricing-form {
+  width: 1200px;
+}
+#page-pricing .section-pricing .pricing {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2;
+  grid-column: 50px;
+}
+#page-pricing .section-pricing .pricing .pricing-item {
+  box-sizing: border-box;
+  margin-top: 48px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 368.2px;
+  height: 615px;
+}
+#page-pricing .section-pricing .pricing .pricing-item .price {
+  font-family: "Roboto";
+  margin-top: 200px;
+  margin-left: 99px;
+  width: 193px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
+  font-size: 64px;
+  line-height: 1em;
+  font-weight: normal;
+}
+#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
+  text-transform: uppercase;
+}
+#page-pricing .section-pricing .pricing .pricing-item a {
+  margin-top: 40px;
+  width: 318.66px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  padding: 21px 0px;
+}
+#page-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
+  text-transform: uppercase;
+}
+#page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
+  margin-top: 64px;
+  width: 318px;
+  height: 57px;
+}
+#page-pricing .section-pricing .pricing .bg-free,
+#page-pricing .section-pricing .pricing .bg-free-three,
+#page-pricing .section-pricing .pricing .bg-free-two {
+  width: 368.2px;
+  height: 615px;
+  background-position: center;
+  background-size: cover;
+}
+#page-pricing .section-pricing .pricing .bg-free {
+  background-image: url("../images/subscribe_1.png");
+}
+#page-pricing .section-pricing .pricing .bg-free .price {
+  width: 121px;
+}
+#page-pricing .section-pricing .pricing .bg-free-two {
+  background-image: url("../images/subscribe_2.png");
+}
+#page-pricing .section-pricing .pricing .bg-free-three {
+  background-image: url("../images/subscribe_3.png");
+}
+#page-pricing .section-pricing .pricing-info {
+  width: 1200px;
+  height: 64px;
+  margin-top: 43px;
+}
+
+@media only screen and (max-width: 414px) {
+  #page-pricing {
+    width: 414px;
+    height: 2220px;
+  }
+  #page-pricing .section-pricing {
+    padding-top: 100px;
+    margin: 0 20px;
+    width: 374px;
+  }
+  #page-pricing .section-pricing .pricing-form {
+    width: 374px;
+  }
+  #page-pricing .section-pricing .pricing {
+    width: 374px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    grid-row: 50px;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item {
+    box-sizing: border-box;
+    margin-top: 46px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 374px;
+    height: 598px;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item .price {
+    font-family: "Roboto", sans-serif;
+    margin-top: 203px;
+    margin-left: 99px;
+    width: 193px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
+    font-size: 64px;
+    line-height: 1em;
+    font-weight: normal;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
+    text-transform: uppercase;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item a {
+    width: 326px;
+  }
+  #page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
+    width: 324.27px;
+    height: 57px;
+  }
+  #page-pricing .section-pricing .pricing .bg-free,
+  #page-pricing .section-pricing .pricing .bg-free-three,
+  #page-pricing .section-pricing .pricing .bg-free-two {
+    width: 374px;
+    height: 598px;
+  }
+  #page-pricing .section-pricing .pricing .bg-free .price {
+    width: 123.42px;
+  }
+  #page-pricing .section-pricing .pricing-info {
+    width: 374px;
+    height: 120px;
+    margin-top: 40px;
+    text-align: center;
   }
 }
 

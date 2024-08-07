@@ -1,0 +1,183 @@
+@import url("variables.scss");
+
+#page-pricing {
+  margin: 0px;
+  padding: 0px;
+  background: $base-color-background;
+  height: 908px;
+
+  .section-pricing {
+    padding-top: 100px;
+    margin-left: 122px;
+    & * {
+      text-align: center;
+      color: $color-text-white;
+      margin: 0px;
+    }
+
+    .pricing-form {
+      width: 1200px;
+      // padding-top: 100px;
+    }
+
+    .pricing {
+      width: 1200px;
+      // height: ;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 2;
+      grid-column: 50px;
+
+      .pricing-item {
+        box-sizing: border-box;
+        //   display: inline-block;
+        margin-top: 48px;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        width: 368.2px;
+        height: 615px;
+        //   h3 {
+        //     margin-top: 24px;
+        //   }
+        .price {
+          font-family: "Roboto";
+          margin-top: 200px;
+          margin-left: 99px;
+          width: 193px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .pricing-value {
+            font-size: 64px;
+            line-height: 1em;
+            font-weight: normal;
+            .text-size-2 {
+              text-transform: uppercase;
+            }
+          }
+        }
+        a {
+          margin-top: 40px;
+          width: 318.66px;
+          display: inline-block;
+          border: 1px solid #ffffff;
+          border-radius: 1rem;
+          padding: 21px 0px;
+
+          .text-size-1 {
+            text-transform: uppercase;
+          }
+        }
+        .pricing-footer {
+          margin-top: 64px;
+          width: 318px;
+          height: 57px;
+        }
+      }
+      .bg-free,
+      .bg-free-three,
+      .bg-free-two {
+        width: 368.2px;
+        height: 615px;
+        background-position: center;
+        background-size: cover;
+      }
+      .bg-free {
+        background-image: url("../images/subscribe_1.png");
+
+        .price {
+          width: 121px;
+        }
+      }
+      .bg-free-two {
+        background-image: url("../images/subscribe_2.png");
+      }
+      .bg-free-three {
+        background-image: url("../images/subscribe_3.png");
+      }
+    }
+
+    .pricing-info {
+      width: 1200px;
+      height: 64px;
+      margin-top: 43px;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #page-pricing {
+    width: 414px;
+    height: 2220px;
+
+    .section-pricing {
+      padding-top: 100px;
+      margin: 0 20px;
+      width: 374px;
+
+      .pricing-form {
+        width: 374px;
+        // padding-top: 100px;
+      }
+
+      .pricing {
+        width: 374px;
+        // height: ;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        grid-row: 50px;
+
+        .pricing-item {
+          box-sizing: border-box;
+          //   display: inline-block;
+          margin-top: 46px;
+          padding: 1.5rem;
+          border-radius: 1rem;
+          width: 374px;
+          height: 598px;
+
+          .price {
+            font-family: "Roboto", sans-serif;
+            margin-top: 203px;
+            margin-left: 99px;
+            width: 193px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .pricing-value {
+              font-size: 64px;
+              line-height: 1em;
+              font-weight: normal;
+              .text-size-2 {
+                text-transform: uppercase;
+              }
+            }
+          }
+          a {
+            width: 326px;
+          }
+          .pricing-footer {
+            width: 324.27px;
+            height: 57px;
+          }
+        }
+        .bg-free,
+        .bg-free-three,
+        .bg-free-two {
+          width: 374px;
+          height: 598px;
+        }
+        .bg-free {
+          .price {
+            width: 123.42px;
+          }
+        }
+      }
+      .pricing-info {
+        width: 374px;
+        height: 120px;
+        margin-top: 40px;
+        text-align: center;
+      }
+    }
+  }
+}

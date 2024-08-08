@@ -13,10 +13,12 @@
 .fotter {
   width: 1200px;
   margin: 0 120px;
+
   .fotter-top {
+    box-sizing: border-box;
     width: 1200px;
     height: 25px;
-    padding-top: 20px;
+    padding-top: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,8 +68,9 @@
       justify-items: end;
       display: grid;
       grid-column: 1fr;
-      color: #757575;
+
       .search {
+        color: #757575;
         justify-content: end;
         border-radius: 50px;
         height: 25px;

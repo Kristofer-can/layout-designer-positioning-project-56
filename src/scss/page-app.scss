@@ -1,0 +1,59 @@
+@import url("variables.scss");
+@import url("general.scss");
+
+#page-app {
+  height: 583px;
+  background-color: $base-color-background;
+  .app {
+    padding-top: 100px;
+    margin: 0px 120px;
+    width: 1200px;
+    text-align: center;
+    .app-info {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      //   grid-column: 144px;
+      .info-app-one {
+        text-align: left;
+        button {
+          margin-top: 16px;
+          background-color: $background-color-orange;
+          border: 1px solid $background-color-orange;
+          border-radius: 30px;
+          box-sizing: border-box;
+          padding: 16px 40px;
+        }
+      }
+      img {
+        margin-left: 144px;
+        width: 333px;
+        height: 278px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #page-app {
+    height: 822px;
+    .app {
+      margin: 0px 20px;
+      width: 374px;
+      text-align: center;
+      .app-info {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column-reverse;
+        .info-app-one {
+          button {
+            margin-top: 15px;
+          }
+        }
+        img {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

@@ -332,7 +332,7 @@ a {
     flex-direction: column-reverse;
   }
 }
-#page-description {
+.fotter {
   background-image: url("../images/banner.png");
   position: relative;
   width: 1440px;
@@ -340,13 +340,12 @@ a {
   background-position: center;
   background-size: cover;
 }
-
-.fotter {
+.fotter #page-description {
   width: 1200px;
   margin: 0 120px;
   padding-top: 25px;
 }
-.fotter .fotter-top {
+.fotter #page-description .fotter-top {
   box-sizing: border-box;
   width: 1200px;
   height: 25px;
@@ -354,7 +353,7 @@ a {
   flex-direction: row;
   align-items: center;
 }
-.fotter .fotter-top .logo {
+.fotter #page-description .fotter-top .logo {
   margin-left: 0px;
   font-size: 11px;
   width: 98px;
@@ -367,14 +366,14 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 }
-.fotter .fotter-top .logo .logo-name {
+.fotter #page-description .fotter-top .logo .logo-name {
   width: max-content;
 }
-.fotter .fotter-top .logo img {
+.fotter #page-description .fotter-top .logo img {
   height: 25px;
   width: 25px;
 }
-.fotter .fotter-top .menu {
+.fotter #page-description .fotter-top .menu {
   margin-left: 90px;
   width: 313px;
   display: grid;
@@ -383,7 +382,7 @@ a {
   font-size: 11px;
   line-height: 16.5px;
 }
-.fotter .fotter-top .menu a {
+.fotter #page-description .fotter-top .menu a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -391,17 +390,17 @@ a {
   line-height: 16.5px;
   color: #cacaca;
 }
-.fotter .fotter-top .menu .music {
+.fotter #page-description .fotter-top .menu .music {
   color: #ffffff;
 }
-.fotter .fotter-top .searc-p {
+.fotter #page-description .fotter-top .searc-p {
   margin-left: 451px;
   justify-content: end;
   justify-items: end;
   display: grid;
   grid-column: 1fr;
 }
-.fotter .fotter-top .searc-p .search {
+.fotter #page-description .fotter-top .searc-p .search {
   color: #757575;
   justify-content: end;
   border-radius: 50px;
@@ -417,7 +416,7 @@ a {
   line-height: 15.29px;
   text-align: left;
 }
-.fotter .description {
+.fotter #page-description .description {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4;
@@ -426,15 +425,15 @@ a {
   text-align: center;
   margin-top: 146px;
 }
-.fotter .description * {
+.fotter #page-description .description * {
   margin: 0px;
 }
-.fotter .description .fotter-indication {
+.fotter #page-description .description .fotter-indication {
   font-size: 16px;
   line-height: 24px;
   margin-top: 31px;
 }
-.fotter .description .form-name-email {
+.fotter #page-description .description .form-name-email {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -444,8 +443,8 @@ a {
   margin: 0px 305px;
   margin-top: 17px;
 }
-.fotter .description .form-name-email .input-name,
-.fotter .description .form-name-email .input-email {
+.fotter #page-description .description .form-name-email .input-name,
+.fotter #page-description .description .form-name-email .input-email {
   min-height: 50px;
   width: 273px;
   padding-left: 20px;
@@ -460,37 +459,37 @@ a {
   color: #ffffff;
   text-align: left;
 }
-.fotter .description .form-name-email input.input-name::placeholder {
+.fotter #page-description .description .form-name-email input.input-name::placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-name::-webkit-input-placeholder {
+.fotter #page-description .description .form-name-email input.input-name::-webkit-input-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-name::-moz-placeholder {
+.fotter #page-description .description .form-name-email input.input-name::-moz-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-name:-moz-placeholder {
+.fotter #page-description .description .form-name-email input.input-name:-moz-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-name:-ms-input-placeholder {
+.fotter #page-description .description .form-name-email input.input-name:-ms-input-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-email::placeholder {
+.fotter #page-description .description .form-name-email input.input-email::placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-email::-webkit-input-placeholder {
+.fotter #page-description .description .form-name-email input.input-email::-webkit-input-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-email::-moz-placeholder {
+.fotter #page-description .description .form-name-email input.input-email::-moz-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-email:-moz-placeholder {
+.fotter #page-description .description .form-name-email input.input-email:-moz-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email input.input-email:-ms-input-placeholder {
+.fotter #page-description .description .form-name-email input.input-email:-ms-input-placeholder {
   color: #ffffff;
 }
-.fotter .description .form-name-email .form-button {
+.fotter #page-description .description .form-name-email .form-button {
   height: 57px;
   width: 570px;
   font-family: Arial;
@@ -861,8 +860,8 @@ a {
 .footer .footer-block {
   padding: 0px;
   margin-left: 120px;
-  width: 1200px;
   height: 138px;
+  width: 1200px;
   padding-top: 3rem;
   margin-bottom: 3rem;
   display: flex;

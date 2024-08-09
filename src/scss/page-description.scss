@@ -1,6 +1,6 @@
 @import url("variables.scss");
 
-#page-description {
+.fotter {
   background-image: url("../images/banner.png");
   position: relative;
   width: 1440px;
@@ -8,172 +8,173 @@
   height: 750px;
   background-position: center;
   background-size: cover;
-}
 
-.fotter {
-  width: 1200px;
-  margin: 0 120px;
-  padding-top: 25px;
-  .fotter-top {
-    box-sizing: border-box;
+  #page-description {
     width: 1200px;
-    height: 25px;
+    margin: 0 120px;
+    padding-top: 25px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .logo {
-      margin-left: 0px;
-      font-size: 11px;
-      width: 98px;
-      line-height: 16.5px;
-      display: grid;
-      grid-template-columns: 25px auto;
-      justify-content: start;
-      grid-column-gap: 16px;
+    .fotter-top {
+      box-sizing: border-box;
+      width: 1200px;
+      height: 25px;
+
+      display: flex;
+      flex-direction: row;
       align-items: center;
-      color: $color-text-white;
-      text-transform: uppercase;
-      .logo-name {
-        width: max-content;
-      }
-      img {
-        height: 25px;
-        width: 25px;
-      }
-    }
-    .menu {
-      margin-left: 90px;
-      width: 313px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 24px;
-      font-size: 11px;
-      line-height: 16.5px;
-      a {
-        display: block;
-        text-decoration: none;
+      .logo {
+        margin-left: 0px;
+        font-size: 11px;
+        width: 98px;
+        line-height: 16.5px;
+        display: grid;
+        grid-template-columns: 25px auto;
+        justify-content: start;
+        grid-column-gap: 16px;
+        align-items: center;
+        color: $color-text-white;
         text-transform: uppercase;
+        .logo-name {
+          width: max-content;
+        }
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+      .menu {
+        margin-left: 90px;
+        width: 313px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
         font-size: 11px;
         line-height: 16.5px;
-        color: $base-color-text;
+        a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 16.5px;
+          color: $base-color-text;
+        }
+        .music {
+          color: $color-text-white;
+        }
       }
-      .music {
-        color: $color-text-white;
-      }
-    }
-    .searc-p {
-      margin-left: 451px;
-      justify-content: end;
-      justify-items: end;
-      display: grid;
-      grid-column: 1fr;
-
-      .search {
-        color: #757575;
+      .searc-p {
+        margin-left: 451px;
         justify-content: end;
-        border-radius: 50px;
-        height: 25px;
-        box-sizing: border-box;
-        padding: 5px 10px;
-        width: 248px;
-        background: $color-text-dark-gray;
-        border: 1px solid $color-text-dark-gray;
-        font-family: Arial;
-        font-size: 13.3px;
-        font-weight: 400;
-        line-height: 15.29px;
-        text-align: left;
+        justify-items: end;
+        display: grid;
+        grid-column: 1fr;
+
+        .search {
+          color: #757575;
+          justify-content: end;
+          border-radius: 50px;
+          height: 25px;
+          box-sizing: border-box;
+          padding: 5px 10px;
+          width: 248px;
+          background: $color-text-dark-gray;
+          border: 1px solid $color-text-dark-gray;
+          font-family: Arial;
+          font-size: 13.3px;
+          font-weight: 400;
+          line-height: 15.29px;
+          text-align: left;
+        }
       }
     }
-  }
-  .description {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4;
-    width: 100%;
-    height: min-content;
-    text-align: center;
-    margin-top: 146px;
-    & * {
-      margin: 0px;
-    }
-    .fotter-indication {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 31px;
-    }
-    .form-name-email {
+    .description {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      width: 570px;
-      height: 131px;
-      column-gap: 1.2rem;
-      margin: 0px 305px;
-      margin-top: 17px;
-      .input-name,
-      .input-email {
-        min-height: 50px;
-        width: 273px;
-        padding-left: 20px;
-        margin-bottom: 1.5rem;
-        border-radius: 3px;
-        border: 2px solid $base-color-text;
-        box-sizing: border-box;
-        background: transparent;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16.41px;
-        color: $color-text-white;
-        text-align: left;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4;
+      width: 100%;
+      height: min-content;
+      text-align: center;
+      margin-top: 146px;
+      & * {
+        margin: 0px;
       }
-      input.input-name::placeholder {
-        color: $color-text-white;
+      .fotter-indication {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 31px;
       }
-      input.input-name::-webkit-input-placeholder {
-        color: $color-text-white;
-      }
-      input.input-name::-moz-placeholder {
-        color: $color-text-white;
-      }
-      input.input-name:-moz-placeholder {
-        color: $color-text-white;
-      }
-      input.input-name:-ms-input-placeholder {
-        color: $color-text-white;
-      }
-
-      input.input-email::placeholder {
-        color: $color-text-white;
-      }
-      input.input-email::-webkit-input-placeholder {
-        color: $color-text-white;
-      }
-      input.input-email::-moz-placeholder {
-        color: $color-text-white;
-      }
-      input.input-email:-moz-placeholder {
-        color: $color-text-white;
-      }
-      input.input-email:-ms-input-placeholder {
-        color: $color-text-white;
-      }
-
-      .form-button {
-        height: 57px;
+      .form-name-email {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         width: 570px;
-        font-family: Arial;
-        font-size: 13.3px;
-        font-weight: 400;
-        line-height: 15.29px;
-        box-sizing: border-box;
-        padding: 20px 30px;
-        border-radius: 5px;
-        background: #34c176;
-        justify-items: stretch;
-        grid-column: 1/3;
-        border: 1px solid #34c176;
+        height: 131px;
+        column-gap: 1.2rem;
+        margin: 0px 305px;
+        margin-top: 17px;
+        .input-name,
+        .input-email {
+          min-height: 50px;
+          width: 273px;
+          padding-left: 20px;
+          margin-bottom: 1.5rem;
+          border-radius: 3px;
+          border: 2px solid $base-color-text;
+          box-sizing: border-box;
+          background: transparent;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16.41px;
+          color: $color-text-white;
+          text-align: left;
+        }
+        input.input-name::placeholder {
+          color: $color-text-white;
+        }
+        input.input-name::-webkit-input-placeholder {
+          color: $color-text-white;
+        }
+        input.input-name::-moz-placeholder {
+          color: $color-text-white;
+        }
+        input.input-name:-moz-placeholder {
+          color: $color-text-white;
+        }
+        input.input-name:-ms-input-placeholder {
+          color: $color-text-white;
+        }
+
+        input.input-email::placeholder {
+          color: $color-text-white;
+        }
+        input.input-email::-webkit-input-placeholder {
+          color: $color-text-white;
+        }
+        input.input-email::-moz-placeholder {
+          color: $color-text-white;
+        }
+        input.input-email:-moz-placeholder {
+          color: $color-text-white;
+        }
+        input.input-email:-ms-input-placeholder {
+          color: $color-text-white;
+        }
+
+        .form-button {
+          height: 57px;
+          width: 570px;
+          font-family: Arial;
+          font-size: 13.3px;
+          font-weight: 400;
+          line-height: 15.29px;
+          box-sizing: border-box;
+          padding: 20px 30px;
+          border-radius: 5px;
+          background: #34c176;
+          justify-items: stretch;
+          grid-column: 1/3;
+          border: 1px solid #34c176;
+        }
       }
     }
   }

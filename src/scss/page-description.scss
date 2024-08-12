@@ -1,62 +1,61 @@
 @import url("variables.scss");
 
 #page-description {
+  padding: 200px 20px;
   background-image: url("../images/banner.png");
-  position: relative;
+  // position: absolute;
   width: 1440px;
-  //   max-width: 1440px;
-  height: 750px;
   background-position: center;
   background-size: cover;
-  padding: 200px 20px;
+  z-index: -1;
 }
 
 .fotter-top {
-  box-sizing: border-box;
-  width: 1200px;
-  height: 25px;
-  right: 0;
-  left: 100px;
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
   top: 25px;
   position: absolute;
-
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  .logo {
-    margin-left: 0px;
+  color: $base-color-text;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  & * {
     font-size: 11px;
-    width: 98px;
+    // width: 98px;
     line-height: 16.5px;
-    display: grid;
-    grid-template-columns: 25px auto;
-    justify-content: start;
-    grid-column-gap: 16px;
+  }
+  .logo {
+    margin-right: auto;
+    font-size: 11px;
+    line-height: 16.5px;
     align-items: center;
-    color: $color-text-white;
     text-transform: uppercase;
-    .logo-name {
-      width: max-content;
-    }
+    display: flex;
+    column-gap: 16px;
     img {
       height: 25px;
       width: 25px;
     }
   }
   .menu {
-    margin-left: 90px;
-    width: 313px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 24px;
+    display: flex;
+    flex-direction: row;
     font-size: 11px;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
     line-height: 16.5px;
+    left: 0;
+    right: 0;
     a {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 11px;
-      line-height: 16.5px;
       color: $base-color-text;
     }
     .music {
@@ -64,40 +63,38 @@
     }
   }
   .searc-p {
-    margin-left: 451px;
-    justify-content: end;
-    justify-items: end;
-    display: grid;
-    grid-column: 1fr;
-
+    margin-left: auto;
     .search {
       color: #757575;
-      justify-content: end;
       border-radius: 50px;
+      width: 248px;
       height: 25px;
       box-sizing: border-box;
       padding: 5px 10px;
-      width: 248px;
       background: $color-text-dark-gray;
-      border: 1px solid $color-text-dark-gray;
+      border: none;
       font-family: Arial;
-      font-size: 13.3px;
-      font-weight: 400;
-      line-height: 15.29px;
-      text-align: left;
+      // font-size: 13.3px;
+      // font-weight: 400;
+      // line-height: 15.29px;
+      // text-align: left;
     }
   }
 }
+
 .description {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4;
-  width: 100%;
-  height: min-content;
+  // margin-top: 47px;
   text-align: center;
-  margin-top: 146px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // max-width: 1200px;
+  align-items: center;
+  padding: 0 20px;
+
   & * {
     margin: 0px;
+    text-align: center;
   }
   .fotter-indication {
     font-size: 16px;
@@ -105,20 +102,23 @@
     margin-top: 31px;
   }
   .form-name-email {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 570px;
-    height: 131px;
+    display: flex;
+    max-width: 570px;
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 1.2rem;
-    margin: 0px 434px;
+    margin: 0px auto;
     margin-top: 17px;
+
+    & * {
+      flex-grow: 1;
+    }
     .input-name,
     .input-email {
-      min-height: 50px;
-      width: 273px;
+      max-width: 273px;
+      height: 50px;
       padding-left: 20px;
-      margin-bottom: 1.5rem;
+      // margin-bottom: 1.5rem;
       border-radius: 3px;
       border: 2px solid $base-color-text;
       box-sizing: border-box;
@@ -160,10 +160,11 @@
     input.input-email:-ms-input-placeholder {
       color: $color-text-white;
     }
-
     .form-button {
+      margin-top: 24px;
+      justify-content: safe;
       height: 57px;
-      width: 570px;
+      min-width: 374px;
       font-family: Arial;
       font-size: 13.3px;
       font-weight: 400;
@@ -172,9 +173,9 @@
       padding: 20px 30px;
       border-radius: 5px;
       background: #34c176;
-      justify-items: stretch;
-      grid-column: 1/3;
-      border: 1px solid #34c176;
+      // justify-items: stretch;
+      // grid-column: 1/3;
+      border: none;
     }
   }
 }

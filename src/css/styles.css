@@ -6,11 +6,6 @@
 @import url("general.scss");
 @import url("variables.scss");
 @import url("general.scss");
-@font-face {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  src: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
-}
 html,
 body {
   margin: 0;
@@ -20,12 +15,13 @@ body {
 }
 
 body {
-  font: "Roboto" 16px/1.5px;
+  font-family: "Roboto", sans-serif;
   color: #cacaca;
   width: 1440px;
-  height: 100%;
+  font-size: 16px;
   margin: 0;
-  padding: 0;
+  color: #cacaca;
+  line-height: 1.5;
 }
 
 h1 {
@@ -33,6 +29,7 @@ h1 {
   font-weight: bold;
   line-height: 90px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 h2 {
@@ -40,6 +37,7 @@ h2 {
   font-weight: bold;
   line-height: 57px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 h3 {
@@ -47,6 +45,7 @@ h3 {
   font-weight: normal;
   line-height: 45px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 h3 .capitalize {
@@ -54,6 +53,7 @@ h3 .capitalize {
   font-weight: normal;
   line-height: 45px;
   text-transform: capitalize;
+  color: #ffffff;
 }
 
 h3 .capitalize-bold {
@@ -61,6 +61,7 @@ h3 .capitalize-bold {
   font-weight: bold;
   line-height: 45px;
   text-transform: capitalize;
+  color: #ffffff;
 }
 
 h4 {
@@ -68,6 +69,7 @@ h4 {
   font-weight: bold;
   line-height: 27px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 h4 .capitalize-bold {
@@ -75,6 +77,7 @@ h4 .capitalize-bold {
   font-weight: bold;
   line-height: 27px;
   text-transform: capitalize;
+  color: #ffffff;
 }
 
 .text-size-7 {
@@ -82,6 +85,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 96px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-6 {
@@ -89,6 +93,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 84px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-5 {
@@ -96,6 +101,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 72px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-4 {
@@ -103,6 +109,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 60px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-3 {
@@ -110,6 +117,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 48px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-2 {
@@ -117,6 +125,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 36px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-size-1 {
@@ -124,6 +133,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 24px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-small {
@@ -131,6 +141,7 @@ h4 .capitalize-bold {
   font-weight: normal;
   line-height: 19.2px;
   text-transform: none;
+  color: #ffffff;
 }
 
 .text-small-bold {
@@ -138,12 +149,14 @@ h4 .capitalize-bold {
   font-weight: bold;
   line-height: 19.2px;
   text-transform: none;
+  color: #ffffff;
 }
 
 a {
   display: block;
   text-decoration: none;
   color: #cacaca;
+  border: none;
 }
 
 .btn {
@@ -168,24 +181,28 @@ a {
     font-weight: bold;
     line-height: 45px;
     text-transform: uppercase;
+    color: #ffffff;
   }
   h2 {
     font-size: 18px;
     font-weight: bold;
     line-height: 27px;
     text-transform: uppercase;
+    color: #ffffff;
   }
   h3 {
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     text-transform: uppercase;
+    color: #ffffff;
   }
   h4 {
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
     text-transform: uppercase;
+    color: #ffffff;
   }
 }
 .white {
@@ -335,102 +352,94 @@ a {
   }
 }
 #page-description {
+  padding: 200px 20px;
   background-image: url("../images/banner.png");
-  position: relative;
   width: 1440px;
-  height: 750px;
   background-position: center;
   background-size: cover;
-  padding: 200px 20px;
+  z-index: -1;
+  align-items: center;
+  text-align: center;
 }
 
 .fotter-top {
-  box-sizing: border-box;
-  width: 1200px;
-  height: 25px;
-  right: 0;
-  left: 100px;
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
   top: 25px;
   position: absolute;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  color: #cacaca;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.fotter-top * {
+  font-size: 11px;
+  line-height: 16.5px;
 }
 .fotter-top .logo {
-  margin-left: 0px;
+  margin-right: auto;
   font-size: 11px;
-  width: 98px;
   line-height: 16.5px;
-  display: grid;
-  grid-template-columns: 25px auto;
-  justify-content: start;
-  grid-column-gap: 16px;
   align-items: center;
-  color: #ffffff;
   text-transform: uppercase;
-}
-.fotter-top .logo .logo-name {
-  width: max-content;
+  display: flex;
+  column-gap: 16px;
 }
 .fotter-top .logo img {
   height: 25px;
   width: 25px;
 }
 .fotter-top .menu {
-  margin-left: 90px;
-  width: 313px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 24px;
+  display: flex;
+  flex-direction: row;
   font-size: 11px;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
   line-height: 16.5px;
+  left: 0;
+  right: 0;
 }
 .fotter-top .menu a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 11px;
-  line-height: 16.5px;
   color: #cacaca;
 }
 .fotter-top .menu .music {
   color: #ffffff;
 }
 .fotter-top .searc-p {
-  margin-left: 451px;
-  justify-content: end;
-  justify-items: end;
-  display: grid;
-  grid-column: 1fr;
+  margin-left: auto;
 }
 .fotter-top .searc-p .search {
   color: #757575;
-  justify-content: end;
   border-radius: 50px;
+  width: 248px;
   height: 25px;
   box-sizing: border-box;
   padding: 5px 10px;
-  width: 248px;
   background: #3c3b3d;
-  border: 1px solid #3c3b3d;
+  border: none;
   font-family: Arial;
-  font-size: 13.3px;
-  font-weight: 400;
-  line-height: 15.29px;
-  text-align: left;
 }
 
 .description {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4;
-  width: 100%;
-  height: min-content;
   text-align: center;
-  margin-top: 146px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
+  padding: 0 20px;
 }
 .description * {
   margin: 0px;
+  text-align: center;
 }
 .description .fotter-indication {
   font-size: 16px;
@@ -438,21 +447,22 @@ a {
   margin-top: 31px;
 }
 .description .form-name-email {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 570px;
-  height: 131px;
+  display: flex;
+  max-width: 570px;
+  flex-direction: row;
+  flex-wrap: wrap;
   column-gap: 1.2rem;
-  margin: 0px 434px;
+  margin: 0px auto;
   margin-top: 17px;
+}
+.description .form-name-email * {
+  flex-grow: 1;
 }
 .description .form-name-email .input-name,
 .description .form-name-email .input-email {
-  min-height: 50px;
-  width: 273px;
+  max-width: 273px;
+  height: 50px;
   padding-left: 20px;
-  margin-bottom: 1.5rem;
   border-radius: 3px;
   border: 2px solid #cacaca;
   box-sizing: border-box;
@@ -494,8 +504,10 @@ a {
   color: #ffffff;
 }
 .description .form-name-email .form-button {
+  margin-top: 24px;
+  justify-content: safe;
   height: 57px;
-  width: 570px;
+  min-width: 374px;
   font-family: Arial;
   font-size: 13.3px;
   font-weight: 400;
@@ -504,9 +516,7 @@ a {
   padding: 20px 30px;
   border-radius: 5px;
   background: #34c176;
-  justify-items: stretch;
-  grid-column: 1/3;
-  border: 1px solid #34c176;
+  border: none;
 }
 
 @media only screen and (max-width: 414px) {

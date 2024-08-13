@@ -117,12 +117,17 @@ a {
 .gray {
   color: $base-color-text;
 }
+.container {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 414px) {
   body {
     font: "Roboto" 11px/12.89px;
     font-weight: 700;
-    width: 414px;
     text-align: left;
   }
 
@@ -137,5 +142,9 @@ a {
   }
   h4 {
     @include headline(18px, bold, 24px, uppercase);
+  }
+
+  .container {
+    max-width: 374px;
   }
 }

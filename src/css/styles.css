@@ -362,11 +362,9 @@ a {
 }
 #page-description {
   background-image: url("../images/banner.png");
-  max-width: 1440px;
   background-position: center;
   background-size: cover;
   z-index: -1;
-  box-sizing: border-box;
 }
 
 .fotter-top {
@@ -558,17 +556,16 @@ a {
   .fotter-top .searc-p {
     margin-top: 18px;
     margin-left: 0px;
+    width: 100%;
   }
   .fotter-top .searc-p .search {
     margin-left: 0px;
+    width: 100%;
   }
   .description {
     padding-top: 248px;
     max-width: 374px;
     text-align: center;
-    margin-top: 78px;
-    margin-bottom: 201px;
-    padding: 0;
   }
   .description * {
     margin: 0px;

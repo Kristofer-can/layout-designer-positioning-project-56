@@ -548,7 +548,6 @@ a {
     margin-top: 17px;
     display: flex;
     flex-direction: column;
-    row-gap: 3px;
     font-size: 11px;
     line-height: 12.89px;
     align-items: start;

@@ -50,6 +50,7 @@
         //   }
         & * {
           text-align: center;
+          margin: 0;
         }
         .price {
           font-family: "Roboto";
@@ -74,7 +75,7 @@
           // width: 318.66px;
           display: inline-block;
           border: 1px solid #ffffff;
-          border-radius: 1rem;
+          border-radius: 5px;
           width: 100%;
           padding: 21px 0px;
 
@@ -145,7 +146,7 @@
         justify-content: left;
 
         .pricing-item {
-          margin-top: 0px;
+          padding-top: 16px;
           .price {
             font-family: "Roboto", sans-serif;
             margin-top: 203px;

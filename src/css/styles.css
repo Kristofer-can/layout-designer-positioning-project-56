@@ -600,16 +600,20 @@ a {
   margin: 0px;
   padding: 0px;
   background: #08020d;
+  z-index: -1;
 }
 #page-pricing .section-pricing {
-  padding-top: 101px;
+  padding-top: 100px;
   padding-bottom: 0px;
+  max-width: 1200px;
 }
 #page-pricing .section-pricing * {
   text-align: center;
   color: #ffffff;
   margin: 0px;
-  max-width: 1200px;
+}
+#page-pricing .section-pricing h3 {
+  height: 36px;
 }
 #page-pricing .section-pricing .pricing {
   display: flex;
@@ -619,9 +623,8 @@ a {
 }
 #page-pricing .section-pricing .pricing .pricing-item {
   box-sizing: border-box;
-  padding: 1.5rem;
-  padding-bottom: 64px;
   border-radius: 1rem;
+  padding: 24px 1.5rem 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -649,11 +652,13 @@ a {
 }
 #page-pricing .section-pricing .pricing .pricing-item a {
   margin-top: 40px;
+  box-sizing: border-box;
   display: inline-block;
   border: 1px solid #ffffff;
   border-radius: 5px;
   width: 100%;
   padding: 21px 0px;
+  height: 66px;
 }
 #page-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
   text-transform: uppercase;
@@ -677,6 +682,7 @@ a {
   background-image: url("../images/subscribe_3.png");
 }
 #page-pricing .section-pricing .pricing-info {
+  margin: 0;
   max-width: 1200px;
   margin-top: 40px;
 }
@@ -694,10 +700,11 @@ a {
   }
   #page-pricing .section-pricing h3 {
     font-weight: 400;
+    height: 24px;
   }
   #page-pricing .section-pricing .pricing {
     margin-top: 49px;
-    row-gap: 49px;
+    row-gap: 50px;
     flex-wrap: wrap;
     justify-content: left;
   }
@@ -706,7 +713,7 @@ a {
   }
   #page-pricing .section-pricing .pricing .pricing-item .price {
     font-family: "Roboto", sans-serif;
-    margin-top: 203px;
+    margin-top: 200px;
   }
   #page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
     min-width: 100%;

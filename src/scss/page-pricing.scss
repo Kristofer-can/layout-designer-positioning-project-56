@@ -4,23 +4,26 @@
   margin: 0px;
   padding: 0px;
   background: $base-color-background;
+  z-index: -1;
 
   .section-pricing {
-    padding-top: 101px;
+    padding-top: 100px;
     padding-bottom: 0px;
+    max-width: 1200px;
 
     & * {
       text-align: center;
       color: $color-text-white;
       margin: 0px;
-      max-width: 1200px;
     }
 
     // .pricing-form {
     //   width: 1200px;
     //   // padding-top: 100px;
     // }
-
+    h3 {
+      height: 36px;
+    }
     .pricing {
       // width: 1200px;
       // height: ;
@@ -35,10 +38,10 @@
 
       .pricing-item {
         box-sizing: border-box;
-        padding: 1.5rem;
-        padding-bottom: 64px;
+        // padding: 1.5rem;
+        // padding-bottom: 64px;
         border-radius: 1rem;
-
+        padding: 24px 1.5rem 64px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -73,11 +76,13 @@
         a {
           margin-top: 40px;
           // width: 318.66px;
+          box-sizing: border-box;
           display: inline-block;
           border: 1px solid #ffffff;
           border-radius: 5px;
           width: 100%;
           padding: 21px 0px;
+          height: 66px;
 
           .text-size-1 {
             text-transform: uppercase;
@@ -113,6 +118,7 @@
     }
 
     .pricing-info {
+      margin: 0;
       max-width: 1200px;
       margin-top: 40px;
     }
@@ -135,13 +141,14 @@
 
       h3 {
         font-weight: 400;
+        height: 24px;
       }
 
       .pricing {
         margin-top: 49px;
         // width: 374px;
         // height: ;
-        row-gap: 49px;
+        row-gap: 50px;
         flex-wrap: wrap;
         justify-content: left;
 
@@ -149,7 +156,7 @@
           padding-top: 16px;
           .price {
             font-family: "Roboto", sans-serif;
-            margin-top: 203px;
+            margin-top: 200px;
 
             // display: grid;
             // grid-template-columns: 1fr 1fr;

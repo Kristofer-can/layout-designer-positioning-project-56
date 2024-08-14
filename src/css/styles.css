@@ -600,42 +600,43 @@ a {
   margin: 0px;
   padding: 0px;
   background: #08020d;
-  height: 908px;
 }
 #page-pricing .section-pricing {
-  padding-top: 100px;
-  margin-left: 122px;
+  padding-top: 101px;
+  padding-bottom: 0px;
 }
 #page-pricing .section-pricing * {
   text-align: center;
   color: #ffffff;
   margin: 0px;
-}
-#page-pricing .section-pricing .pricing-form {
-  width: 1200px;
+  max-width: 1200px;
 }
 #page-pricing .section-pricing .pricing {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2;
-  grid-column: 50px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-top: 48px;
 }
 #page-pricing .section-pricing .pricing .pricing-item {
   box-sizing: border-box;
-  margin-top: 48px;
   padding: 1.5rem;
+  padding-bottom: 64px;
   border-radius: 1rem;
-  width: 368.2px;
-  height: 615px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page-pricing .section-pricing .pricing .pricing-item * {
+  text-align: center;
 }
 #page-pricing .section-pricing .pricing .pricing-item .price {
   font-family: "Roboto";
   margin-top: 200px;
-  margin-left: 99px;
   width: 193px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 16px;
 }
 #page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
   font-size: 64px;
@@ -647,10 +648,10 @@ a {
 }
 #page-pricing .section-pricing .pricing .pricing-item a {
   margin-top: 40px;
-  width: 318.66px;
   display: inline-block;
   border: 1px solid #ffffff;
   border-radius: 1rem;
+  width: 100%;
   padding: 21px 0px;
 }
 #page-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
@@ -658,22 +659,15 @@ a {
 }
 #page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
   margin-top: 64px;
-  width: 318px;
-  height: 57px;
 }
 #page-pricing .section-pricing .pricing .bg-free,
 #page-pricing .section-pricing .pricing .bg-free-three,
 #page-pricing .section-pricing .pricing .bg-free-two {
-  width: 368.2px;
-  height: 615px;
   background-position: center;
   background-size: cover;
 }
 #page-pricing .section-pricing .pricing .bg-free {
   background-image: url("../images/subscribe_1.png");
-}
-#page-pricing .section-pricing .pricing .bg-free .price {
-  width: 121px;
 }
 #page-pricing .section-pricing .pricing .bg-free-two {
   background-image: url("../images/subscribe_2.png");
@@ -682,79 +676,51 @@ a {
   background-image: url("../images/subscribe_3.png");
 }
 #page-pricing .section-pricing .pricing-info {
-  width: 1200px;
-  height: 64px;
-  margin-top: 43px;
+  max-width: 1200px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 414px) {
   #page-pricing {
-    width: 414px;
-    height: 2220px;
+    max-width: 414px;
   }
   #page-pricing .section-pricing {
     padding-top: 100px;
-    margin: 0 20px;
-    width: 374px;
+    padding-bottom: 1px;
+  }
+  #page-pricing .section-pricing * {
+    max-width: 374px;
   }
   #page-pricing .section-pricing h3 {
     font-weight: 400;
   }
-  #page-pricing .section-pricing .pricing-form {
-    width: 374px;
-  }
   #page-pricing .section-pricing .pricing {
-    width: 374px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3;
-    grid-row: 50px;
+    margin-top: 49px;
+    row-gap: 49px;
+    flex-wrap: wrap;
+    justify-content: left;
   }
   #page-pricing .section-pricing .pricing .pricing-item {
-    box-sizing: border-box;
-    margin-top: 46px;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    width: 374px;
-    height: 598px;
+    margin-top: 0px;
   }
   #page-pricing .section-pricing .pricing .pricing-item .price {
     font-family: "Roboto", sans-serif;
     margin-top: 203px;
-    margin-left: 99px;
-    width: 193px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  #page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
-    font-size: 64px;
-    line-height: 1em;
-    font-weight: normal;
-  }
-  #page-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
-    text-transform: uppercase;
-  }
-  #page-pricing .section-pricing .pricing .pricing-item a {
-    width: 326px;
   }
   #page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
-    width: 324.27px;
-    height: 57px;
+    min-width: 100%;
   }
   #page-pricing .section-pricing .pricing .bg-free,
   #page-pricing .section-pricing .pricing .bg-free-three,
   #page-pricing .section-pricing .pricing .bg-free-two {
-    width: 374px;
-    height: 598px;
+    min-width: 374px;
   }
   #page-pricing .section-pricing .pricing .bg-free .price {
     width: 123.42px;
   }
   #page-pricing .section-pricing .pricing-info {
-    width: 374px;
-    height: 120px;
+    min-width: 100%;
     margin-top: 40px;
-    text-align: center;
   }
 }
 #page-app {

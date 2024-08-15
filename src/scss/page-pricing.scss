@@ -5,10 +5,12 @@
   padding: 0px;
   background: $base-color-background;
   z-index: -1;
+  min-width: 1240px;
+  height: 908px;
 
   .section-pricing {
-    padding-top: 100px;
-    padding-bottom: 0px;
+    padding-top: 101px;
+    // padding-bottom: -17px;
     max-width: 1200px;
 
     & * {
@@ -16,41 +18,22 @@
       color: $color-text-white;
       margin: 0px;
     }
-
-    // .pricing-form {
-    //   width: 1200px;
-    //   // padding-top: 100px;
-    // }
     h3 {
       height: 36px;
     }
     .pricing {
-      // width: 1200px;
-      // height: ;
-      // display: grid;
-      // grid-template-columns: 1fr 1fr 1fr;
-      // grid-template-rows: 2;
       display: flex;
       flex-direction: row;
-      // flex-wrap: wrap;
       column-gap: 50px;
       margin-top: 48px;
-
       .pricing-item {
         box-sizing: border-box;
-        // padding: 1.5rem;
-        // padding-bottom: 64px;
         border-radius: 1rem;
         padding: 24px 1.5rem 64px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // max-width: ;
-        // width: 368.2px;
-        // height: 615px;
-        //   h3 {
-        //     margin-top: 24px;
-        //   }
+        max-width: calc(1100px / 3);
         & * {
           text-align: center;
           margin: 0;
@@ -58,7 +41,6 @@
         .price {
           font-family: "Roboto";
           margin-top: 200px;
-          // margin-left: 99px;
           width: 193px;
           display: flex;
           flex-direction: row;
@@ -75,7 +57,6 @@
         }
         a {
           margin-top: 40px;
-          // width: 318.66px;
           box-sizing: border-box;
           display: inline-block;
           border: 1px solid #ffffff;
@@ -90,21 +71,16 @@
         }
         .pricing-footer {
           margin-top: 64px;
-          // width: 318px;
-          // height: 57px;
         }
       }
       .bg-free,
       .bg-free-three,
       .bg-free-two {
-        // width: 368.2px;
-        // height: 615px;
         background-position: center;
         background-size: cover;
       }
       .bg-free {
         background-image: url("../images/subscribe_1.png");
-
         .price {
           // width: 121px;
         }
@@ -121,57 +97,37 @@
       margin: 0;
       max-width: 1200px;
       margin-top: 40px;
+      height: 64px;
     }
   }
 }
 
 @media only screen and (max-width: 414px) {
   #page-pricing {
+    height: min-content;
     max-width: 414px;
+    min-width: 200px;
     .section-pricing {
       padding-top: 100px;
       padding-bottom: 1px;
-
       & * {
         max-width: 374px;
       }
-      // padding-top: 100px;
-      // margin: 0 20px;
-      // width: 374px;
-
       h3 {
         font-weight: 400;
         height: 24px;
       }
-
       .pricing {
         margin-top: 49px;
-        // width: 374px;
-        // height: ;
         row-gap: 50px;
         flex-wrap: wrap;
         justify-content: left;
-
         .pricing-item {
           padding-top: 16px;
           .price {
             font-family: "Roboto", sans-serif;
             margin-top: 200px;
-
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
-            // .pricing-value {
-            //   font-size: 64px;
-            //   line-height: 1em;
-            //   font-weight: normal;
-            //   .text-size-2 {
-            //     text-transform: uppercase;
-            //   }
-            // }
           }
-          // a {
-          //   width: 326px;
-          // }
           .pricing-footer {
             min-width: 100%;
           }
@@ -180,7 +136,6 @@
         .bg-free-three,
         .bg-free-two {
           min-width: 374px;
-          // height: 598px;
         }
         .bg-free {
           .price {
@@ -190,9 +145,9 @@
       }
       .pricing-info {
         min-width: 100%;
-        // height: 120px;
         margin-top: 40px;
-        // text-align: center;
+        height: min-content;
+        // выше добавила height
       }
     }
   }

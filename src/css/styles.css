@@ -671,7 +671,10 @@ a {
 #pageee-pricing .section-pricing .pricing-info {
   margin: 0;
   margin-top: 40px;
-  height: 64px;
+  height: 44px;
+}
+#pageee-pricing .section-pricing .pricing-info p {
+  height: 44px;
 }
 
 @media only screen and (max-width: 414px) {

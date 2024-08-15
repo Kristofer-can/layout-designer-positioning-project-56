@@ -221,44 +221,44 @@ a {
   text-transform: uppercase;
 }
 
-#page-news {
+#pageee-news {
   margin: 0px;
   padding: 0px;
   background-color: #08020d;
 }
-#page-news .section-news {
+#pageee-news .section-news {
   padding-top: 100px;
   padding-bottom: 0px;
 }
-#page-news .section-news * {
+#pageee-news .section-news * {
   margin: 0px;
   text-align: center;
   color: #ffffff;
 }
-#page-news .section-news .new {
+#pageee-news .section-news .new {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
   margin-top: 48px;
 }
-#page-news .section-news .new .music-to-be {
+#pageee-news .section-news .new .music-to-be {
   max-width: 575px;
 }
-#page-news .section-news .new .text-new * {
+#pageee-news .section-news .new .text-new * {
   text-align: left;
   margin: 0px;
 }
-#page-news .section-news .new .text-new .text-header {
+#pageee-news .section-news .new .text-new .text-header {
   font-family: Roboto;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
 }
-#page-news .section-news .new .text-new .text-midle {
+#pageee-news .section-news .new .text-new .text-midle {
   color: #cacaca;
   margin-top: 30px;
 }
-#page-news .section-news .new .text-new .date-music {
+#pageee-news .section-news .new .text-new .date-music {
   margin-top: 24px;
   width: 186px;
   height: 20px;
@@ -267,24 +267,24 @@ a {
   grid-column: 16px;
   justify-content: space-between;
 }
-#page-news .section-news .new .text-new .date-music * {
+#pageee-news .section-news .new .text-new .date-music * {
   margin: 0px;
 }
-#page-news .section-news .new .text-new .date-music img {
+#pageee-news .section-news .new .text-new .date-music img {
   width: 19px;
   height: 19px;
 }
-#page-news .section-news .new .text-new .date-music .box {
+#pageee-news .section-news .new .text-new .date-music .box {
   color: #f89202;
 }
-#page-news .section-news .new .text-new .date-music .date {
+#pageee-news .section-news .new .text-new .date-music .date {
   color: #cacaca;
 }
-#page-news .section-news .new .text-new .in-albom {
+#pageee-news .section-news .new .text-new .in-albom {
   text-align: left;
   margin-top: 48px;
 }
-#page-news .section-news .new .text-new .btn {
+#pageee-news .section-news .new .text-new .btn {
   box-sizing: border-box;
   width: 135px;
   height: 53px;
@@ -294,10 +294,10 @@ a {
   border: 1px solid #cacaca;
   text-align: left;
 }
-#page-news .section-news .new .text-new .text-small {
+#pageee-news .section-news .new .text-new .text-small {
   font-size: 12px;
 }
-#page-news .section-news .one {
+#pageee-news .section-news .one {
   margin-top: 65px;
 }
 
@@ -578,24 +578,24 @@ a {
     box-sizing: border-box;
   }
 }
-#page-pricing {
+#pageee-pricing {
   margin: 0px;
   padding: 0px;
   background: #08020d;
   z-index: -1;
 }
-#page-pricing .section-pricing {
+#pageee-pricing .section-pricing {
   padding-top: 101px;
 }
-#page-pricing .section-pricing * {
+#pageee-pricing .section-pricing * {
   text-align: center;
   color: #ffffff;
   margin: 0px;
 }
-#page-pricing .section-pricing h3 {
+#pageee-pricing .section-pricing h3 {
   height: 36px;
 }
-#page-pricing .section-pricing .pricing {
+#pageee-pricing .section-pricing .pricing {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
@@ -606,7 +606,7 @@ a {
   column-gap: 50px;
   row-gap: 50px;
 }
-#page-pricing .section-pricing .pricing .pricing-item {
+#pageee-pricing .section-pricing .pricing .pricing-item {
   box-sizing: border-box;
   border-radius: 1rem;
   padding: 24px 1.5rem 64px;
@@ -615,11 +615,11 @@ a {
   align-items: center;
   max-width: 366.6666666667px;
 }
-#page-pricing .section-pricing .pricing .pricing-item * {
+#pageee-pricing .section-pricing .pricing .pricing-item * {
   text-align: center;
   margin: 0;
 }
-#page-pricing .section-pricing .pricing .pricing-item .price {
+#pageee-pricing .section-pricing .pricing .pricing-item .price {
   font-family: "Roboto";
   margin-top: 200px;
   width: 193px;
@@ -629,15 +629,15 @@ a {
   justify-content: center;
   column-gap: 16px;
 }
-#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
+#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
   font-size: 64px;
   line-height: 1em;
   font-weight: normal;
 }
-#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
+#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
   text-transform: uppercase;
 }
-#page-pricing .section-pricing .pricing .pricing-item a {
+#pageee-pricing .section-pricing .pricing .pricing-item a {
   margin-top: 40px;
   box-sizing: border-box;
   display: inline-block;
@@ -647,33 +647,33 @@ a {
   padding: 21px 0px;
   height: 66px;
 }
-#page-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
+#pageee-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
   text-transform: uppercase;
 }
-#page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
+#pageee-pricing .section-pricing .pricing .pricing-item .pricing-footer {
   margin-top: 64px;
 }
-#page-pricing .section-pricing .pricing .bg-free,
-#page-pricing .section-pricing .pricing .bg-free-three,
-#page-pricing .section-pricing .pricing .bg-free-two {
+#pageee-pricing .section-pricing .pricing .bg-free,
+#pageee-pricing .section-pricing .pricing .bg-free-three,
+#pageee-pricing .section-pricing .pricing .bg-free-two {
   background-position: center;
   background-size: cover;
 }
-#page-pricing .section-pricing .pricing .bg-free {
+#pageee-pricing .section-pricing .pricing .bg-free {
   background-image: url("../images/subscribe_1.png");
 }
-#page-pricing .section-pricing .pricing .bg-free-two {
+#pageee-pricing .section-pricing .pricing .bg-free-two {
   background-image: url("../images/subscribe_2.png");
 }
-#page-pricing .section-pricing .pricing .bg-free-three {
+#pageee-pricing .section-pricing .pricing .bg-free-three {
   background-image: url("../images/subscribe_3.png");
 }
-#page-pricing .section-pricing .pricing-info {
+#pageee-pricing .section-pricing .pricing-info {
   margin: 0;
   margin-top: 40px;
   height: 44px;
 }
-#page-pricing .section-pricing .pricing-info p {
+#pageee-pricing .section-pricing .pricing-info p {
   height: 44px;
 }
 
@@ -710,26 +710,26 @@ a {
     height: min-content;
   }
 }
-#page-app {
+#pageee-app {
   background-color: #08020d;
 }
-#page-app .app {
+#pageee-app .app {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
-#page-app .app .app-info {
+#pageee-app .app .app-info {
   margin-top: 64px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 144px;
 }
-#page-app .app .app-info .info-app-one {
+#pageee-app .app .app-info .info-app-one {
   max-width: 600px;
   text-align: left;
 }
-#page-app .app .app-info .info-app-one button {
+#pageee-app .app .app-info .info-app-one button {
   margin-top: 16px;
   background-color: #95390c;
   border: none;
@@ -737,7 +737,7 @@ a {
   box-sizing: border-box;
   padding: 16px 40px;
 }
-#page-app .app .app-info img {
+#pageee-app .app .app-info img {
   justify-items: right;
   width: 333px;
   height: 278px;

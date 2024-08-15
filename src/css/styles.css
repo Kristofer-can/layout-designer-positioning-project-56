@@ -578,24 +578,24 @@ a {
     box-sizing: border-box;
   }
 }
-#pageee-pricing {
+#page-pricing {
   margin: 0px;
   padding: 0px;
   background: #08020d;
   z-index: -1;
 }
-#pageee-pricing .section-pricing {
+#page-pricing .section-pricing {
   padding-top: 101px;
 }
-#pageee-pricing .section-pricing * {
+#page-pricing .section-pricing * {
   text-align: center;
   color: #ffffff;
   margin: 0px;
 }
-#pageee-pricing .section-pricing h3 {
+#page-pricing .section-pricing h3 {
   height: 36px;
 }
-#pageee-pricing .section-pricing .pricing {
+#page-pricing .section-pricing .pricing {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
@@ -606,7 +606,7 @@ a {
   column-gap: 50px;
   row-gap: 50px;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item {
+#page-pricing .section-pricing .pricing .pricing-item {
   box-sizing: border-box;
   border-radius: 1rem;
   padding: 24px 1.5rem 64px;
@@ -615,11 +615,11 @@ a {
   align-items: center;
   max-width: 366.6666666667px;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item * {
+#page-pricing .section-pricing .pricing .pricing-item * {
   text-align: center;
   margin: 0;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item .price {
+#page-pricing .section-pricing .pricing .pricing-item .price {
   font-family: "Roboto";
   margin-top: 200px;
   width: 193px;
@@ -629,15 +629,15 @@ a {
   justify-content: center;
   column-gap: 16px;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
+#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value {
   font-size: 64px;
   line-height: 1em;
   font-weight: normal;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
+#page-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
   text-transform: uppercase;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item a {
+#page-pricing .section-pricing .pricing .pricing-item a {
   margin-top: 40px;
   box-sizing: border-box;
   display: inline-block;
@@ -647,33 +647,33 @@ a {
   padding: 21px 0px;
   height: 66px;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
+#page-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
   text-transform: uppercase;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item .pricing-footer {
+#page-pricing .section-pricing .pricing .pricing-item .pricing-footer {
   margin-top: 64px;
 }
-#pageee-pricing .section-pricing .pricing .bg-free,
-#pageee-pricing .section-pricing .pricing .bg-free-three,
-#pageee-pricing .section-pricing .pricing .bg-free-two {
+#page-pricing .section-pricing .pricing .bg-free,
+#page-pricing .section-pricing .pricing .bg-free-three,
+#page-pricing .section-pricing .pricing .bg-free-two {
   background-position: center;
   background-size: cover;
 }
-#pageee-pricing .section-pricing .pricing .bg-free {
+#page-pricing .section-pricing .pricing .bg-free {
   background-image: url("../images/subscribe_1.png");
 }
-#pageee-pricing .section-pricing .pricing .bg-free-two {
+#page-pricing .section-pricing .pricing .bg-free-two {
   background-image: url("../images/subscribe_2.png");
 }
-#pageee-pricing .section-pricing .pricing .bg-free-three {
+#page-pricing .section-pricing .pricing .bg-free-three {
   background-image: url("../images/subscribe_3.png");
 }
-#pageee-pricing .section-pricing .pricing-info {
+#page-pricing .section-pricing .pricing-info {
   margin: 0;
   margin-top: 40px;
   height: 44px;
 }
-#pageee-pricing .section-pricing .pricing-info p {
+#page-pricing .section-pricing .pricing-info p {
   height: 44px;
 }
 

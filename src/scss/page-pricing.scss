@@ -5,13 +5,12 @@
   padding: 0px;
   background: $base-color-background;
   z-index: -1;
-  min-width: 1240px;
-  height: 908px;
+  // height: 908px;
 
   .section-pricing {
     padding-top: 101px;
     // padding-bottom: -17px;
-    max-width: 1200px;
+    // max-width: 1200px;
 
     & * {
       text-align: center;
@@ -24,13 +23,20 @@
     .pricing {
       display: flex;
       flex-direction: row;
+      // flex-wrap: wrap;
       column-gap: 50px;
       margin-top: 48px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+      row-gap: 50px;
       .pricing-item {
         box-sizing: border-box;
         border-radius: 1rem;
         padding: 24px 1.5rem 64px;
         display: flex;
+        // flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         max-width: calc(1100px / 3);
@@ -43,6 +49,7 @@
           margin-top: 200px;
           width: 193px;
           display: flex;
+          flex-wrap: wrap;
           flex-direction: row;
           justify-content: center;
           column-gap: 16px;
@@ -95,7 +102,7 @@
 
     .pricing-info {
       margin: 0;
-      max-width: 1200px;
+      // max-width: 1200px;
       margin-top: 40px;
       height: 64px;
     }
@@ -105,13 +112,13 @@
 @media only screen and (max-width: 414px) {
   #page-pricing {
     height: min-content;
-    max-width: 414px;
-    min-width: 200px;
+    // max-width: 414px;
+    // min-width: 200px;
     .section-pricing {
       padding-top: 100px;
       padding-bottom: 1px;
       & * {
-        max-width: 374px;
+        // max-width: 374px;
       }
       h3 {
         font-weight: 400;
@@ -123,19 +130,19 @@
         flex-wrap: wrap;
         justify-content: left;
         .pricing-item {
-          padding-top: 16px;
+          padding-top: 15px;
           .price {
             font-family: "Roboto", sans-serif;
             margin-top: 200px;
           }
           .pricing-footer {
-            min-width: 100%;
+            // min-width: 100%;
           }
         }
         .bg-free,
         .bg-free-three,
         .bg-free-two {
-          min-width: 374px;
+          // min-width: 374px;
         }
         .bg-free {
           .price {
@@ -144,7 +151,7 @@
         }
       }
       .pricing-info {
-        min-width: 100%;
+        // min-width: 100%;
         margin-top: 40px;
         height: min-content;
         // выше добавила height

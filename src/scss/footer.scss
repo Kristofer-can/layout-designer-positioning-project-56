@@ -7,34 +7,28 @@
     $background-color-brown 14.9%,
     $background-color-violet 68.95%
   );
-  width: 1440px;
-  height: 387px;
-
   .footer-block {
-    padding: 0px;
-    margin-left: 120px;
-    height: 138px;
-    width: 1200px;
     padding-top: 3rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     .footer-info {
       text-align: left;
       display: grid;
       grid-template-columns: 1fr;
-
+      row-gap: 15px;
+      align-content: flex-start;
+      h4 {
+      }
       .white {
         padding: 0px;
         margin: 0px;
-        margin-top: 16px;
       }
       .fotter-text {
-        height: min-content;
-        margin-top: 19px;
-
+        p {
+          margin: 0;
+        }
         .footer-img {
           margin-left: 24px;
         }
@@ -42,72 +36,34 @@
     }
   }
   .line {
-    margin-top: 72px;
     border: 1px solid #cacaca;
-    width: 1440px;
   }
   .botton-footer {
-    margin-top: 40px;
-    margin-left: 120px;
-    width: 438px;
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    column-gap: 16px;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .footer {
-    width: 414px;
-    height: 957px;
-
     .footer-block {
-      margin-left: 20px;
-      width: 374px;
-      height: min-content;
-      //   padding-top: 3rem;
-      //   margin-bottom: 3rem;
-      display: flex;
       flex-direction: column;
-      justify-content: space-between;
-
+      row-gap: 30px;
       .footer-info {
         text-align: left;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 15px;
-
-        & * {
-          margin: 0px;
-        }
-        .white {
-          padding: 0px;
-          margin: 0px;
-          margin-top: 16px;
-        }
-        .fotter-text {
-          height: min-content;
-          margin-top: 21px;
-
-          .footer-img {
-            margin-left: 24px;
-          }
-        }
       }
     }
     .line {
-      margin-top: 75px;
-      width: 414px;
     }
     .botton-footer {
-      margin-top: 40px;
-      margin-left: 20px;
-      width: 112px;
-      height: 184px;
-      display: flex;
       font-weight: 400;
       flex-direction: column;
-      justify-content: space-between;
+      row-gap: 16px;
     }
   }
 }

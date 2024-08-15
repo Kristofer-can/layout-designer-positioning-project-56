@@ -4,13 +4,15 @@
 #page-news {
   margin: 0px;
   padding: 0px;
-  width: 1440px;
-  height: 842px;
+  // width: 1440px;
+  // height: 842px;
   background-color: $base-color-background;
   .section-news {
-    width: 1200px;
+    // width: 1200px;
     padding-top: 100px;
-    margin-left: 120px;
+    padding-bottom: 0px;
+    // text-align: center;
+    // margin-left: 120px;
     & * {
       margin: 0px;
       text-align: center;
@@ -19,11 +21,11 @@
     .new {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column: 50px;
+      column-gap: 50px;
       margin-top: 48px;
       .music-to-be {
-        width: 575px;
-        height: 286px;
+        max-width: 575px;
+        // height: 286px;
       }
       .text-new {
         & * {
@@ -66,12 +68,13 @@
         }
         .in-albom {
           text-align: left;
+          margin-top: 48px;
         }
         .btn {
           box-sizing: border-box;
           width: 135px;
           height: 53px;
-          margin-top: 48px;
+          border-radius: 5px;
           padding: 16px 30px;
           color: $base-color-text;
           border: 1px solid $base-color-text;
@@ -89,19 +92,19 @@
 }
 @media only screen and (max-width: 414px) {
   #page-news {
-    width: 414px;
-    height: 1216px;
+    // max-width: 414px;
+    // height: 1216px;
     .section-news {
-      width: 374px;
-      margin-left: 20px;
-      margin-right: 20px;
+      // width: 374px;
+      // margin-left: 20px;
+      // margin-right: 20px;
 
       .new {
         grid-template-columns: 1fr;
-        height: 492px;
+        // height: 492px;
         .music-to-be {
-          width: 374px;
-          height: 186px;
+          max-width: 374px;
+          // height: 186px;
         }
         .text-new {
           .text-header {
@@ -115,8 +118,8 @@
           }
           .date-music {
             margin-top: 24px;
-            width: 187px;
-            height: 19px;
+            max-width: 187px;
+            // height: 19px;
           }
           .in-albom {
             text-align: left;
@@ -125,7 +128,7 @@
             box-sizing: border-box;
             width: 135px;
             height: 53px;
-            margin-top: 48px;
+            // margin-top: 48px;
             padding: 16px 30px;
             color: $base-color-text;
             border: 1px solid $base-color-text;
@@ -138,7 +141,7 @@
       }
       .one {
         margin-top: 64px;
-        height: 485px;
+        // height: 485px;
         display: flex;
         flex-direction: column-reverse;
       }

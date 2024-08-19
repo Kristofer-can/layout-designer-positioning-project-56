@@ -1,0 +1,161 @@
+@import url("variables.scss");
+@import url("general.scss");
+
+#pageee-description {
+  background-image: url("../images/Morten\ Harket.png");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.header-top {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  top: 25px;
+  position: absolute;
+  color: $base-color-text;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  & * {
+    font-size: 11px;
+    line-height: 16.5px;
+  }
+  .logo {
+    margin-right: 90px;
+    font-size: 11px;
+    line-height: 16.5px;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: 16px;
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    line-height: 16.5px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $base-color-text;
+    }
+    .music {
+      color: $color-text-white;
+    }
+  }
+  .searc-p {
+    margin-left: auto;
+    color: #757575;
+    .search {
+      color: #757575;
+      border-radius: 50px;
+      width: 248px;
+      height: 25px;
+      box-sizing: border-box;
+      padding: 5px 10px;
+      background: $color-text-dark-gray;
+      border: none;
+      font-family: Arial;
+      font-size: 13.3px;
+      font-weight: 400;
+      line-height: 15.29px;
+      text-align: left;
+    }
+  }
+}
+.description {
+  max-width: 1200px;
+  padding: 250px 20px 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  & * {
+    margin: 0px;
+    text-align: center;
+  }
+  .header-indication {
+    margin-top: 16px;
+  }
+  .form-button {
+    display: flex;
+    max-width: 570px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-top: 48px;
+    .button {
+      height: 52px;
+      width: 200px;
+      box-sizing: border-box;
+      padding: 20px 30px;
+      border-radius: 5px;
+      background: $background-color-violet;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      column-gap: 16px;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .two {
+      background: $background-color-brown;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header-top {
+    max-width: 374px;
+    flex-direction: column;
+    align-items: start;
+    .logo {
+      margin-left: 0px;
+    }
+    .menu {
+      margin-left: 0px;
+      margin-top: 17px;
+      display: flex;
+      flex-direction: column;
+      font-size: 11px;
+      line-height: 12.89px;
+      align-items: start;
+    }
+    .searc-p {
+      margin-top: 18px;
+      margin-left: 0px;
+      width: 100%;
+      .search {
+        margin-left: 0px;
+        width: 100%;
+      }
+    }
+  }
+  .description {
+    padding: 225px 20px 224px;
+    .header-indication {
+      margin-top: 16px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import url("variables.scss");
+@import url("general.scss");
+
+.popular-tracks {
+  padding: 100px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  text-align: left;
+
+  h2 {
+    margin: 0;
+  }
+  .play-musick {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 50px;
+    // justify-content: space-between;
+    .popular-track {
+      width: 551px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 25px;
+      flex-wrap: nowrap;
+
+      img {
+        width: 55px;
+        height: 55px;
+      }
+      .track-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        & * {
+          //   flex-grow: 1;
+          margin: 0;
+          color: $color-text-light-gray;
+        }
+        .name-track {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: start;
+
+          .white {
+            color: $color-text-white;
+          }
+        }
+      }
+    }
+  }
+}

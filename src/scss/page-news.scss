@@ -10,7 +10,7 @@
   .section-news {
     // width: 1200px;
     padding-top: 100px;
-    padding-bottom: 0px;
+    margin-bottom: 0px;
     // text-align: center;
     // margin-left: 120px;
     & * {
@@ -91,14 +91,8 @@
   }
 }
 @media only screen and (max-width: 414px) {
-  #page-news {
-    // max-width: 414px;
-    // height: 1216px;
+  #pageee-news {
     .section-news {
-      // width: 374px;
-      // margin-left: 20px;
-      // margin-right: 20px;
-
       .new {
         grid-template-columns: 1fr;
         // height: 492px;

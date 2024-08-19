@@ -39,6 +39,7 @@ body {
   margin: 0;
   color: $base-color-text;
   line-height: 1.5;
+  background-color: $base-color-background;
 }
 
 @mixin headline($size, $weight, $height, $transform) {
@@ -104,6 +105,9 @@ a {
   text-decoration: none;
   color: $base-color-text;
   border: none;
+}
+.white {
+  color: $color-text-white;
 }
 
 .btn {

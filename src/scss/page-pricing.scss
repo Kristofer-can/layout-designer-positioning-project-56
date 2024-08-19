@@ -9,6 +9,7 @@
 
   .section-pricing {
     padding-top: 101px;
+    margin-bottom: 0px;
     // height: 908px;
     // padding-bottom: -17px;
     // max-width: 1200px;
@@ -115,13 +116,13 @@
 }
 
 @media only screen and (max-width: 414px) {
-  #page-pricing {
+  #pageee-pricing {
     height: min-content;
     // max-width: 414px;
     // min-width: 200px;
     .section-pricing {
       padding-top: 100px;
-      padding-bottom: 1px;
+      margin-bottom: 0px;
       & * {
         // max-width: 374px;
       }

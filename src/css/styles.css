@@ -21,6 +21,7 @@ body {
   margin: 0;
   color: #cacaca;
   line-height: 1.5;
+  background-color: #08020d;
 }
 
 h1 {
@@ -228,7 +229,7 @@ a {
 }
 #pageee-news .section-news {
   padding-top: 100px;
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 #pageee-news .section-news * {
   margin: 0px;
@@ -302,29 +303,29 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
-  #page-news .section-news .new {
+  #pageee-news .section-news .new {
     grid-template-columns: 1fr;
   }
-  #page-news .section-news .new .music-to-be {
+  #pageee-news .section-news .new .music-to-be {
     max-width: 374px;
   }
-  #page-news .section-news .new .text-new .text-header {
+  #pageee-news .section-news .new .text-new .text-header {
     font-size: 16px;
     line-height: 24px;
     margin-top: 50px;
   }
-  #page-news .section-news .new .text-new .text-midle {
+  #pageee-news .section-news .new .text-new .text-midle {
     color: #cacaca;
     margin-top: 16px;
   }
-  #page-news .section-news .new .text-new .date-music {
+  #pageee-news .section-news .new .text-new .date-music {
     margin-top: 24px;
     max-width: 187px;
   }
-  #page-news .section-news .new .text-new .in-albom {
+  #pageee-news .section-news .new .text-new .in-albom {
     text-align: left;
   }
-  #page-news .section-news .new .text-new .btn {
+  #pageee-news .section-news .new .text-new .btn {
     box-sizing: border-box;
     width: 135px;
     height: 53px;
@@ -333,10 +334,10 @@ a {
     border: 1px solid #cacaca;
     text-align: left;
   }
-  #page-news .section-news .new .text-new .text-small {
+  #pageee-news .section-news .new .text-new .text-small {
     font-size: 12px;
   }
-  #page-news .section-news .one {
+  #pageee-news .section-news .one {
     margin-top: 64px;
     display: flex;
     flex-direction: column-reverse;
@@ -586,6 +587,7 @@ a {
 }
 #pageee-pricing .section-pricing {
   padding-top: 101px;
+  margin-bottom: 0px;
 }
 #pageee-pricing .section-pricing * {
   text-align: center;
@@ -634,7 +636,13 @@ a {
   line-height: 1em;
   font-weight: normal;
 }
-#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
+#pageee-pricing
+  .section-pricing
+  .pricing
+  .pricing-item
+  .price
+  .pricing-value
+  .text-size-2 {
   text-transform: uppercase;
 }
 #pageee-pricing .section-pricing .pricing .pricing-item a {
@@ -678,34 +686,34 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
-  #page-pricing {
+  #pageee-pricing {
     height: min-content;
   }
-  #page-pricing .section-pricing {
+  #pageee-pricing .section-pricing {
     padding-top: 100px;
-    padding-bottom: 1px;
+    margin-bottom: 0px;
   }
-  #page-pricing .section-pricing h3 {
+  #pageee-pricing .section-pricing h3 {
     font-weight: 400;
     height: 24px;
   }
-  #page-pricing .section-pricing .pricing {
+  #pageee-pricing .section-pricing .pricing {
     margin-top: 49px;
     row-gap: 50px;
     flex-wrap: wrap;
     justify-content: left;
   }
-  #page-pricing .section-pricing .pricing .pricing-item {
+  #pageee-pricing .section-pricing .pricing .pricing-item {
     padding-top: 15px;
   }
-  #page-pricing .section-pricing .pricing .pricing-item .price {
+  #pageee-pricing .section-pricing .pricing .pricing-item .price {
     font-family: "Roboto", sans-serif;
     margin-top: 200px;
   }
-  #page-pricing .section-pricing .pricing .bg-free .price {
+  #pageee-pricing .section-pricing .pricing .bg-free .price {
     width: 123.42px;
   }
-  #page-pricing .section-pricing .pricing-info {
+  #pageee-pricing .section-pricing .pricing-info {
     margin-top: 40px;
     height: min-content;
   }
@@ -715,7 +723,7 @@ a {
 }
 #pageee-app .app {
   padding-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   text-align: center;
 }
 #pageee-app .app .app-info {
@@ -728,6 +736,7 @@ a {
 #pageee-app .app .app-info .info-app-one {
   max-width: 600px;
   text-align: left;
+  margin: 0;
 }
 #pageee-app .app .app-info .info-app-one button {
   margin-top: 16px;
@@ -744,19 +753,19 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
-  #page-app .app {
+  #pageee-app .app {
     max-width: 374px;
     text-align: center;
   }
-  #page-app .app .app-info {
+  #pageee-app .app .app-info {
     margin-top: 48px;
     flex-direction: column-reverse;
     row-gap: 16px;
   }
-  #page-app .app .app-info p {
+  #pageee-app .app .app-info p {
     margin-top: 0;
   }
-  #page-app .app .app-info .info-app-one button {
+  #pageee-app .app .app-info .info-app-one button {
     margin-top: 0;
   }
 }

@@ -331,7 +331,7 @@ a {
   margin-top: 48px;
 }
 .description .form-button .button {
-  height: 52px;
+  height: 62px;
   width: 200px;
   box-sizing: border-box;
   padding: 20px 30px;
@@ -516,6 +516,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  row-gap: 1px;
 }
 #page-similar .simlar .similar-item .similar-info * {
   margin: 0;

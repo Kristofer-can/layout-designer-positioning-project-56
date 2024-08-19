@@ -159,6 +159,10 @@ a {
   border: none;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .btn {
   display: inline-block;
   border: 1px solid #ffffff;
@@ -636,13 +640,7 @@ a {
   line-height: 1em;
   font-weight: normal;
 }
-#pageee-pricing
-  .section-pricing
-  .pricing
-  .pricing-item
-  .price
-  .pricing-value
-  .text-size-2 {
+#pageee-pricing .section-pricing .pricing .pricing-item .price .pricing-value .text-size-2 {
   text-transform: uppercase;
 }
 #pageee-pricing .section-pricing .pricing .pricing-item a {
@@ -725,6 +723,9 @@ a {
   padding-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+}
+#pageee-app .app h2 {
+  margin: 0;
 }
 #pageee-app .app .app-info {
   margin-top: 64px;

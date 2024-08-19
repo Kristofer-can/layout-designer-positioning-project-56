@@ -167,6 +167,7 @@ a {
   display: inline-block;
   border: 1px solid #ffffff;
   border-radius: 1rem;
+  margin: 0;
 }
 
 .gray {
@@ -677,12 +678,7 @@ a {
 #pageee-pricing .section-pricing .pricing-info {
   margin: 0;
   margin-top: 40px;
-  height: 44px;
 }
-#pageee-pricing .section-pricing .pricing-info p {
-  height: 44px;
-}
-
 @media only screen and (max-width: 414px) {
   #pageee-pricing {
     height: min-content;
@@ -733,13 +729,18 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 144px;
+  color: #ffffff;
 }
 #pageee-app .app .app-info .info-app-one {
   max-width: 600px;
   text-align: left;
   margin: 0;
 }
+#pageee-app .app .app-info .info-app-one * {
+  margin: 0;
+}
 #pageee-app .app .app-info .info-app-one button {
+  margin: 0;
   margin-top: 16px;
   background-color: #95390c;
   border: none;
@@ -766,8 +767,8 @@ a {
   #pageee-app .app .app-info p {
     margin-top: 0;
   }
-  #pageee-app .app .app-info .info-app-one button {
-    margin-top: 0;
+  #pageee-app .app .app-info img {
+    text-align: center;
   }
 }
 .footer {

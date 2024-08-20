@@ -9,7 +9,7 @@
 
   .section-pricing {
     padding-top: 101px;
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
     // height: 908px;
     // padding-bottom: -17px;
     // max-width: 1200px;
@@ -136,7 +136,7 @@
         flex-wrap: wrap;
         justify-content: left;
         .pricing-item {
-          padding-top: 15px;
+          padding-top: 16px;
           .price {
             font-family: "Roboto", sans-serif;
             margin-top: 200px;
@@ -152,6 +152,7 @@
         }
         .bg-free {
           .price {
+            // margin-top: 203px;
             width: 123.42px;
           }
         }

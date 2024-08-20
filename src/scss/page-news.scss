@@ -25,7 +25,7 @@
       margin-top: 48px;
       .music-to-be {
         max-width: 575px;
-        // height: 286px;
+        height: 286px;
       }
       .text-new {
         & * {
@@ -45,7 +45,7 @@
         .date-music {
           margin-top: 24px;
           width: 186px;
-          height: 20px;
+          height: 19px;
           display: grid;
           grid-template-columns: 19px 67px 68px;
           grid-column: 16px;
@@ -115,9 +115,13 @@
             max-width: 187px;
             // height: 19px;
           }
+          .two {
+            margin-top: 16px;
+          }
           .in-albom {
             text-align: left;
           }
+
           .btn {
             box-sizing: border-box;
             width: 135px;
@@ -131,6 +135,10 @@
           .text-small {
             font-size: 12px;
           }
+        }
+        .music-to-be {
+          max-width: 374px;
+          height: 187px;
         }
       }
       .one {

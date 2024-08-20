@@ -3,7 +3,10 @@
 
 #page-similar {
   display: flex;
+  padding-bottom: 0px;
+  margin-bottom: 100px;
   flex-direction: column;
+  row-gap: 48px;
   h2 {
     margin: 0;
   }
@@ -30,6 +33,9 @@
         flex-direction: column;
         flex-wrap: wrap;
         row-gap: 1px;
+        h4 {
+          line-height: 27px;
+        }
         & * {
           margin: 0;
         }
@@ -45,7 +51,6 @@
 
 @media only screen and (max-width: 414px) {
   #page-similar .simlar {
-    padding-bottom: 100px;
     .similar-item {
       // justify-content: space-between;
       max-width: 137px;

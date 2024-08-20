@@ -309,7 +309,7 @@ a {
 
 .description {
   max-width: 1200px;
-  padding: 250px 20px 200px;
+  padding: 250px 20px 223px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -472,6 +472,10 @@ a {
 #page-discography .discography .discography-item .discography-info * {
   margin: 0;
 }
+#page-discography .discography .discography-item .discography-info h4 {
+  text-transform: capitalize;
+  line-height: 27px;
+}
 #page-discography .discography .discography-item .discography-info p {
   color: #e0e0e0;
 }
@@ -487,10 +491,16 @@ a {
   #page-discography .discography .discography-item .discography-info h4 {
     text-transform: capitalize;
   }
+  #page-discography .discography .two {
+    max-width: 138px;
+  }
 }
 #page-similar {
   display: flex;
+  padding-bottom: 0px;
+  margin-bottom: 100px;
   flex-direction: column;
+  row-gap: 48px;
 }
 #page-similar h2 {
   margin: 0;
@@ -519,6 +529,9 @@ a {
   flex-wrap: wrap;
   row-gap: 1px;
 }
+#page-similar .simlar .similar-item .similar-info h4 {
+  line-height: 27px;
+}
 #page-similar .simlar .similar-item .similar-info * {
   margin: 0;
 }
@@ -527,9 +540,6 @@ a {
 }
 
 @media only screen and (max-width: 414px) {
-  #page-similar .simlar {
-    padding-bottom: 100px;
-  }
   #page-similar .simlar .similar-item {
     max-width: 137px;
     align-items: center;

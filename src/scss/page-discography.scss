@@ -38,6 +38,11 @@
         & * {
           margin: 0;
         }
+        h4 {
+          // min-height: 27px;
+          text-transform: capitalize;
+          line-height: 27px;
+        }
         p {
           color: $color-text-light-gray;
         }
@@ -61,8 +66,8 @@
         }
       }
     }
-    // .two {
-    //   max-width: 138px;
-    // }
+    .two {
+      max-width: 138px;
+    }
   }
 }

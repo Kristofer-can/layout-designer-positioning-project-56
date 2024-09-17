@@ -136,6 +136,7 @@
         flex-wrap: wrap;
         justify-content: left;
         .pricing-item {
+          max-width: none;
           padding-top: 16px;
           .price {
             font-family: "Roboto", sans-serif;

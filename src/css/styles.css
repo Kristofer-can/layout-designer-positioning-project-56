@@ -705,6 +705,7 @@ a {
     justify-content: left;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item {
+    max-width: none;
     padding-top: 16px;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item .price {

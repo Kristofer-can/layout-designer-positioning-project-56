@@ -613,7 +613,7 @@ a {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
-  margin-top: 48px;
+  margin-top: 50px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -699,7 +699,7 @@ a {
     height: 24px;
   }
   #pageee-pricing .section-pricing .pricing {
-    margin-top: 49px;
+    margin-top: 50px;
     row-gap: 50px;
     flex-wrap: wrap;
     justify-content: left;

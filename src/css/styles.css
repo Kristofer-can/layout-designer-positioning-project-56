@@ -712,6 +712,9 @@ a {
     font-family: "Roboto", sans-serif;
     margin-top: 200px;
   }
+  #pageee-pricing .section-pricing .pricing .pricing-item a {
+    padding: 20px 0px 21px 0px;
+  }
   #pageee-pricing .section-pricing .pricing-info {
     margin-top: 40px;
     height: min-content;

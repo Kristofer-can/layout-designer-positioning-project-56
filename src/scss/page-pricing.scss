@@ -1,6 +1,6 @@
 @import url("variables.scss");
 
-#page-pricing {
+#pageee-pricing {
   margin: 0px;
   padding: 0px;
   background: $base-color-background;
@@ -90,9 +90,6 @@
       }
       .bg-free {
         background-image: url("../images/subscribe_1.png");
-        .price {
-          // width: 121px;
-        }
       }
       .bg-free-two {
         background-image: url("../images/subscribe_2.png");
@@ -104,28 +101,17 @@
 
     .pricing-info {
       margin: 0;
-      // max-width: 1200px;
       margin-top: 40px;
-      // height: 44px;
-
-      p {
-        // height: 44px;
-      }
     }
   }
 }
 
 @media only screen and (max-width: 414px) {
-  #page-pricing {
+  #pageee-pricing {
     height: min-content;
-    // max-width: 414px;
-    // min-width: 200px;
     .section-pricing {
       padding-top: 100px;
       margin-bottom: 0px;
-      & * {
-        // max-width: 374px;
-      }
       h3 {
         font-weight: 400;
         height: 24px;
@@ -144,31 +130,12 @@
           }
           a {
             padding: 20px 0px 21px 0px;
-            // .text-size-1 {
-
-            // }
-          }
-          .pricing-footer {
-            // min-width: 100%;
-          }
-        }
-        .bg-free,
-        .bg-free-three,
-        .bg-free-two {
-          // min-width: 374px;
-        }
-        .bg-free {
-          .price {
-            // margin-top: 203px;
-            // width: 123.42px;
           }
         }
       }
       .pricing-info {
-        // min-width: 100%;
         margin-top: 40px;
         height: min-content;
-        // выше добавила height
       }
     }
   }

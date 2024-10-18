@@ -1,6 +1,6 @@
 @import url("variables.scss");
 
-#pageee-pricing {
+#page-pricing {
   margin: 0px;
   padding: 0px;
   background: $base-color-background;
@@ -116,7 +116,7 @@
 }
 
 @media only screen and (max-width: 414px) {
-  #pageee-pricing {
+  #page-pricing {
     height: min-content;
     // max-width: 414px;
     // min-width: 200px;

@@ -896,33 +896,6 @@ a {
 .description .form-name-email input.input-name::placeholder {
   color: #fff;
 }
-.description .form-name-email input.input-name::-webkit-input-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-name::-moz-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-name:-moz-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-name:-ms-input-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-email::placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-email::-webkit-input-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-email::-moz-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-email:-moz-placeholder {
-  color: #fff;
-}
-.description .form-name-email input.input-email:-ms-input-placeholder {
-  color: #fff;
-}
 .description .form-name-email .form-button {
   justify-content: safe;
   height: 57px;

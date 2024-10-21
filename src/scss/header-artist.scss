@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "general.scss";
+@import "variables";
+@import "general";
 
 #page-description {
   background-image: url("../images/Morten\ Harket.png");
@@ -12,13 +12,13 @@
   display: flex;
   max-width: 1200px;
   flex-flow: row wrap;
-  padding: 0px 20px;
+  padding: 0 20px;
   top: 25px;
   position: absolute;
   color: $base-color-text;
   left: 0;
   right: 0;
-  margin: 0px auto;
+  margin: 0 auto;
 
   & * {
     font-size: 11px;
@@ -76,7 +76,7 @@
       padding: 5px 10px;
       background: $color-text-dark-gray;
       border: none;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       font-size: 13.3px;
       font-weight: 400;
       line-height: 15.29px;

@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "general.scss";
+@import "variables";
+@import "general";
 
 #pageee-app {
   background-color: $base-color-background;
@@ -71,7 +71,7 @@
 
         img {
           display: block;
-          margin: 0px auto;
+          margin: 0 auto;
           text-align: center;
         }
       }

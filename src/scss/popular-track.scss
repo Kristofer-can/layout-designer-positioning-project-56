@@ -1,8 +1,8 @@
-@import url("variables");
-@import url("general");
+@import "variables";
+@import "general";
 
 .popular-tracks {
-  padding: 100px 20px 0px;
+  padding: 100px 20px 0;
   display: flex;
   flex-direction: column;
   row-gap: 48px;
@@ -14,17 +14,15 @@
 
   .play-musick {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     row-gap: 25px;
     column-gap: 50px;
 
     .popular-track {
       width: 551px;
       display: flex;
-      flex-direction: row;
+      flex-flow: row nowrap;
       column-gap: 25px;
-      flex-wrap: nowrap;
 
       img {
         width: 55px;
@@ -34,9 +32,8 @@
       .track-info {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
         justify-content: space-between;
-        flex-wrap: nowrap;
         align-items: center;
 
         & * {
@@ -46,8 +43,7 @@
 
         .name-track {
           display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
+          flex-flow: column nowrap;
           justify-content: start;
 
           .white {

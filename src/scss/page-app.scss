@@ -1,5 +1,5 @@
-@import url("variables");
-@import url("general");
+@import "variables.scss";
+@import "general.scss";
 
 #pageee-app {
   background-color: $base-color-background;
@@ -16,8 +16,7 @@
     .app-info {
       margin-top: 64px;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       column-gap: 144px;
       color: $color-text-white;
 

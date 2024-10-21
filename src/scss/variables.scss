@@ -8,22 +8,6 @@ $background-color-orange: #f89202;
 $background-color-violet: #5328a1;
 $background-color-brown: #95390c;
 
-// @font-face {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 400;
-//   src: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
-// }
-// @font-face {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 400;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
 html,
 body {
   margin: 0;
@@ -36,7 +20,6 @@ body {
   color: $base-color-text;
   font-size: 16px;
   margin: 0;
-  color: $base-color-text;
   line-height: 1.5;
   background-color: $base-color-background;
 }
@@ -144,7 +127,7 @@ a {
 
 @media only screen and (max-width: 414px) {
   body {
-    font: "Roboto" 11px/12.89px;
+    font-family: "Roboto" 11px/12.89px;
     font-weight: 700;
     text-align: left;
   }

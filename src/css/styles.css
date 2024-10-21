@@ -700,14 +700,18 @@ a {
     height: 24px;
   }
   #pageee-pricing .section-pricing .pricing {
-    margin-top: 49px;
+    margin-top: 48px;
     row-gap: 50px;
     flex-wrap: wrap;
     justify-content: left;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item {
     max-width: none;
-    padding-top: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #pageee-pricing .section-pricing .pricing .pricing-item h3 {
+    margin-top: 16px;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item .price {
     font-family: "Roboto", sans-serif;
@@ -715,6 +719,9 @@ a {
   }
   #pageee-pricing .section-pricing .pricing .pricing-item a {
     padding: 20px 0px 21px 0px;
+  }
+  #pageee-pricing .section-pricing .pricing .pricing-item .pricing-footer {
+    margin-bottom: 64px;
   }
   #pageee-pricing .section-pricing .pricing-info {
     margin-top: 40px;

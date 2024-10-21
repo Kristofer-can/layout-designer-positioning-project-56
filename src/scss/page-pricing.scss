@@ -117,19 +117,26 @@
         height: 24px;
       }
       .pricing {
-        margin-top: 49px;
+        margin-top: 48px;
         row-gap: 50px;
         flex-wrap: wrap;
         justify-content: left;
         .pricing-item {
           max-width: none;
-          padding-top: 15px;
+          padding-top: 0;
+          padding-bottom: 0;
+          h3 {
+            margin-top: 16px;
+          }
           .price {
             font-family: "Roboto", sans-serif;
             margin-top: 200px;
           }
           a {
             padding: 20px 0px 21px 0px;
+          }
+          .pricing-footer {
+            margin-bottom: 64px;
           }
         }
       }

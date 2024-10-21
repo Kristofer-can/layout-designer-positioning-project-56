@@ -22,11 +22,10 @@
     .pricing {
       display: flex;
       flex-flow: row wrap;
-      column-gap: 50px;
+      gap: 50px 50px;
       margin-top: 48px;
       align-items: center;
       justify-content: center;
-      row-gap: 50px;
 
       .pricing-item {
         box-sizing: border-box;

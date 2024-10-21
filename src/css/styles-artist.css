@@ -532,8 +532,7 @@ a {
   display: flex;
   max-width: 570px;
   flex-flow: row wrap;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
+  gap: 1.5rem;
   margin-top: 48px;
 }
 .description .form-button .button {
@@ -826,8 +825,7 @@ a {
 .popular-tracks .play-musick {
   display: flex;
   flex-flow: row wrap;
-  row-gap: 25px;
-  column-gap: 50px;
+  gap: 25px 50px;
 }
 .popular-tracks .play-musick .popular-track {
   width: 551px;
@@ -1091,8 +1089,7 @@ a {
 #page-discography .discography {
   display: flex;
   flex-flow: row wrap;
-  row-gap: 25px;
-  column-gap: 50px;
+  gap: 25px 50px;
 }
 #page-discography .discography .discography-item {
   display: flex;
@@ -1366,8 +1363,7 @@ a {
 #page-similar .simlar {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 50px;
-  row-gap: 25px;
+  gap: 25px 50px;
 }
 #page-similar .simlar .similar-item {
   align-items: center;

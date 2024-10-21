@@ -15,8 +15,7 @@
   .play-musick {
     display: flex;
     flex-flow: row wrap;
-    row-gap: 25px;
-    column-gap: 50px;
+    gap: 25px 50px;
 
     .popular-track {
       width: 551px;

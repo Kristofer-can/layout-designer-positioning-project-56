@@ -871,8 +871,7 @@ a {
   display: flex;
   max-width: 570px;
   flex-flow: row wrap;
-  column-gap: 1.2rem;
-  row-gap: 1.5rem;
+  gap: 1.5rem 1.2rem;
   margin: 0 auto;
   margin-top: 17px;
 }
@@ -1240,11 +1239,10 @@ a {
 #pageee-pricing .section-pricing .pricing {
   display: flex;
   flex-flow: row wrap;
-  column-gap: 50px;
+  gap: 50px 50px;
   margin-top: 48px;
   align-items: center;
   justify-content: center;
-  row-gap: 50px;
 }
 #pageee-pricing .section-pricing .pricing .pricing-item {
   box-sizing: border-box;

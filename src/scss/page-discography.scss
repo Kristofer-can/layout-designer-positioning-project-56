@@ -14,8 +14,7 @@
   .discography {
     display: flex;
     flex-flow: row wrap;
-    row-gap: 25px;
-    column-gap: 50px;
+    gap: 25px 50px;
 
     .discography-item {
       display: flex;

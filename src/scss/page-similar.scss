@@ -15,8 +15,7 @@
   .simlar {
     display: flex;
     flex-flow: row wrap;
-    column-gap: 50px;
-    row-gap: 25px;
+    gap: 25px 50px;
 
     .similar-item {
       align-items: center;

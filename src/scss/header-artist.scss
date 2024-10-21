@@ -13,13 +13,13 @@
   max-width: 1200px;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 0px 20px;
   top: 25px;
   position: absolute;
   color: $base-color-text;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0px auto;
 
   & * {
     font-size: 11px;
@@ -95,7 +95,7 @@
   align-items: start;
 
   & * {
-    margin: 0px;
+    margin: 0;
     text-align: center;
   }
 
@@ -145,11 +145,11 @@
     align-items: start;
 
     .logo {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     .menu {
-      margin-left: 0px;
+      margin-left: 0;
       margin-top: 17px;
       display: flex;
       flex-direction: column;
@@ -160,11 +160,11 @@
 
     .searc-p {
       margin-top: 18px;
-      margin-left: 0px;
+      margin-left: 0;
       width: 100%;
 
       .search {
-        margin-left: 0px;
+        margin-left: 0;
         width: 100%;
       }
     }

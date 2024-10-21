@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  font: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #cacaca;
   font-size: 16px;
   margin: 0;
@@ -368,13 +368,13 @@ a {
   max-width: 1200px;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 0px 20px;
   top: 25px;
   position: absolute;
   color: #cacaca;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .fotter-top * {
   font-size: 11px;
@@ -563,7 +563,7 @@ a {
     text-align: center;
   }
   .description * {
-    margin: 0px;
+    margin: 0;
     max-width: 374px;
   }
   .description .fotter-indication {
@@ -584,7 +584,7 @@ a {
     max-width: 374px;
   }
   .description .form-name-email .form-button {
-    margin-top: 0px;
+    margin-top: 0;
     font-family: Arial;
     font-size: 13.3px;
     font-weight: 400;
@@ -658,7 +658,7 @@ a {
   border: 1px solid #ffffff;
   border-radius: 5px;
   width: 100%;
-  padding: 21px 0;
+  padding: 21px 0px;
   height: 66px;
 }
 #pageee-pricing .section-pricing .pricing .pricing-item a .text-size-1 {
@@ -718,7 +718,7 @@ a {
     margin-top: 200px;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item a {
-    padding: 20px 0 21px 0;
+    padding: 20px 0px 21px 0px;
   }
   #pageee-pricing .section-pricing .pricing .pricing-item .pricing-footer {
     margin-bottom: 64px;
@@ -789,7 +789,7 @@ a {
   }
   #pageee-app .app .app-info img {
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
   }
 }
@@ -811,8 +811,8 @@ a {
   align-content: flex-start;
 }
 .footer .footer-block .footer-info .white {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .footer .footer-block .footer-info .fotter-text p {
   margin: 0;

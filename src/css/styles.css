@@ -841,6 +841,9 @@ a {
   .footer .footer-block .footer-info {
     text-align: left;
   }
+  .footer .footer-block .footer-info h4 {
+    line-height: 27px;
+  }
   .footer .botton-footer {
     font-weight: 400;
     flex-direction: column;

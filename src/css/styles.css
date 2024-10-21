@@ -519,7 +519,7 @@ a {
   margin-top: 65px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #pageee-news .section-news .new {
     grid-template-columns: 1fr;
   }

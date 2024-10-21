@@ -172,7 +172,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -392,7 +392,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -738,7 +738,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -938,7 +938,7 @@ a {
   border: none;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #page-description {
     max-width: 414px;
   }
@@ -1181,7 +1181,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1310,7 +1310,7 @@ a {
   margin-top: 40px;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #pageee-pricing {
     height: min-content;
   }
@@ -1525,7 +1525,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1616,7 +1616,7 @@ a {
   height: 278px;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #pageee-app .app {
     max-width: 374px;
     text-align: center;
@@ -1809,7 +1809,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1895,7 +1895,7 @@ a {
   column-gap: 16px;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   .footer .footer-block {
     flex-direction: column;
     row-gap: 30px;

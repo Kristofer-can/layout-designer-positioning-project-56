@@ -126,7 +126,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;

@@ -172,7 +172,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -392,7 +392,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -557,7 +557,7 @@ a {
   background: #95390c;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   .header-top {
     max-width: 374px;
     flex-direction: column;
@@ -766,7 +766,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1031,7 +1031,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1115,7 +1115,7 @@ a {
   color: #e0e0e0;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #page-discography .discography .discography-item {
     max-width: 137px;
   }
@@ -1304,7 +1304,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1390,7 +1390,7 @@ a {
   color: #e0e0e0;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   #page-similar .simlar .similar-item {
     max-width: 137px;
     align-items: center;
@@ -1583,7 +1583,7 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   body {
     font-family: 11px/12.89px Roboto, sans-serif;
     font-weight: 700;
@@ -1669,7 +1669,7 @@ a {
   column-gap: 16px;
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (width = 414px) {
   .footer .footer-block {
     flex-direction: column;
     row-gap: 30px;

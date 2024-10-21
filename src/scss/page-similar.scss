@@ -1,15 +1,17 @@
-@import url("variables.scss");
-@import url("general.scss");
+@import url("variables");
+@import url("general");
 
 #page-similar {
   display: flex;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-bottom: 100px;
   flex-direction: column;
   row-gap: 48px;
+
   h2 {
     margin: 0;
   }
+
   .simlar {
     display: flex;
     flex-direction: row;
@@ -28,19 +30,21 @@
         width: 250px;
         height: 250px;
       }
+
       .similar-info {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         row-gap: 1px;
+
         h4 {
           line-height: 27px;
         }
+
         & * {
           margin: 0;
         }
-        // h4 {
-        // }
+
         p {
           color: $color-text-light-gray;
         }
@@ -52,7 +56,6 @@
 @media only screen and (max-width: 414px) {
   #page-similar .simlar {
     .similar-item {
-      // justify-content: space-between;
       max-width: 137px;
       align-items: center;
 
@@ -60,13 +63,16 @@
         width: 137px;
         height: 137px;
       }
+
       .similar-info {
         text-align: center;
+
         h4 {
           text-transform: capitalize;
         }
       }
     }
+
     .two {
       max-width: 138px;
     }

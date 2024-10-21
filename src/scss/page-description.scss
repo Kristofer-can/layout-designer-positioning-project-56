@@ -1,4 +1,4 @@
-@import url("variables.scss");
+@import url("variables");
 
 #page-description {
   background-image: url("../images/banner.png");
@@ -24,6 +24,7 @@
     font-size: 11px;
     line-height: 16.5px;
   }
+
   .logo {
     margin-right: 90px;
     font-size: 11px;
@@ -32,11 +33,13 @@
     text-transform: uppercase;
     display: flex;
     column-gap: 16px;
+
     img {
       height: 25px;
       width: 25px;
     }
   }
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -48,18 +51,22 @@
     right: 0;
     align-items: center;
     justify-content: center;
+
     a {
       display: block;
       text-decoration: none;
       text-transform: uppercase;
       color: $base-color-text;
     }
+
     .music {
       color: $color-text-white;
     }
   }
+
   .searc-p {
     margin-left: auto;
+
     .search {
       color: #757575;
       border-radius: 50px;
@@ -74,7 +81,6 @@
       font-weight: 400;
       line-height: 15.29px;
       text-align: left;
-      // flex-grow: 1;
     }
   }
 }
@@ -91,11 +97,13 @@
     margin: 0px;
     text-align: center;
   }
+
   .fotter-indication {
     font-size: 16px;
     line-height: 24px;
     margin-top: 31px;
   }
+
   .form-name-email {
     display: flex;
     max-width: 570px;
@@ -109,6 +117,7 @@
     & * {
       flex-grow: 1;
     }
+
     .input-name,
     .input-email {
       max-width: 570px;
@@ -124,18 +133,23 @@
       color: $color-text-white;
       text-align: left;
     }
+
     input.input-name::placeholder {
       color: $color-text-white;
     }
+
     input.input-name::-webkit-input-placeholder {
       color: $color-text-white;
     }
+
     input.input-name::-moz-placeholder {
       color: $color-text-white;
     }
+
     input.input-name:-moz-placeholder {
       color: $color-text-white;
     }
+
     input.input-name:-ms-input-placeholder {
       color: $color-text-white;
     }
@@ -143,20 +157,24 @@
     input.input-email::placeholder {
       color: $color-text-white;
     }
+
     input.input-email::-webkit-input-placeholder {
       color: $color-text-white;
     }
+
     input.input-email::-moz-placeholder {
       color: $color-text-white;
     }
+
     input.input-email:-moz-placeholder {
       color: $color-text-white;
     }
+
     input.input-email:-ms-input-placeholder {
       color: $color-text-white;
     }
+
     .form-button {
-      // margin-top: 24px;
       justify-content: safe;
       height: 57px;
       min-width: 374px;
@@ -177,17 +195,20 @@
   #page-description {
     max-width: 414px;
   }
+
   .fotter-top {
     max-width: 374px;
     display: flex;
     flex-direction: column;
     align-items: start;
+
     .logo {
       margin-left: 0px;
       font-size: 11px;
       height: 24px;
       line-height: 16.5px;
     }
+
     .menu {
       margin-left: 0px;
       margin-top: 17px;
@@ -197,6 +218,7 @@
       line-height: 12.89px;
       align-items: start;
     }
+
     .searc-p {
       margin-top: 18px;
       margin-left: 0px;
@@ -207,30 +229,37 @@
       }
     }
   }
+
   .description {
     padding-top: 248px;
     max-width: 374px;
     text-align: center;
+
     & * {
       margin: 0px;
       max-width: 374px;
     }
+
     .fotter-indication {
       font-size: 16px;
       line-height: 24px;
       margin-top: 16px;
       font-weight: 400;
     }
+
     .form-name-email {
       justify-content: space-between;
       row-gap: 24px;
+
       & * {
         flex-grow: 1;
       }
+
       .input-name,
       .input-email {
         max-width: 374px;
       }
+
       .form-button {
         margin-top: 0px;
         font-family: Arial;

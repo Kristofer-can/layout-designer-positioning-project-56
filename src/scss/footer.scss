@@ -1,5 +1,5 @@
-@import url("variables.scss");
-@import url("general.scss");
+@import url("variables");
+@import url("general");
 
 .footer {
   background: linear-gradient(
@@ -7,47 +7,46 @@
     $background-color-brown 14.9%,
     $background-color-violet 68.95%
   );
+
   .footer-block {
-    // margin-top: 3rem;
-    // margin-bottom: 3rem;
-    // padding-top: 3rem;
-    // padding-bottom: 3rem;
     padding-top: 62px;
     padding-bottom: 72px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .footer-info {
       text-align: left;
       display: grid;
       grid-template-columns: 1fr;
       row-gap: 15px;
       align-content: flex-start;
-      h4 {
-      }
+
       .white {
         padding: 0px;
         margin: 0px;
       }
+
       .fotter-text {
         p {
           margin: 0;
         }
+
         .footer-img {
           margin-left: 24px;
         }
       }
     }
   }
+
   .line {
     border: 1px solid #cacaca;
   }
+
   .botton-footer {
     max-width: 1200px;
     padding-top: 40px;
     padding-bottom: 49px;
-    // padding-top: 2rem;
-    // padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -60,6 +59,7 @@
     .footer-block {
       flex-direction: column;
       row-gap: 30px;
+
       .footer-info {
         text-align: left;
 
@@ -68,8 +68,7 @@
         }
       }
     }
-    .line {
-    }
+
     .botton-footer {
       font-weight: 400;
       flex-direction: column;

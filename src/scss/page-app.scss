@@ -1,8 +1,9 @@
-@import url("variables.scss");
-@import url("general.scss");
+@import url("variables");
+@import url("general");
 
 #pageee-app {
   background-color: $base-color-background;
+
   .app {
     padding-top: 100px;
     margin-bottom: 100px;
@@ -11,6 +12,7 @@
     h2 {
       margin: 0;
     }
+
     .app-info {
       margin-top: 64px;
       display: flex;
@@ -23,16 +25,14 @@
         max-width: 600px;
         text-align: left;
         margin: 0;
+
         p {
           margin-top: 0;
         }
+
         .two {
           margin-bottom: 0;
         }
-
-        // & * {
-        //   margin: 0;
-        // }
 
         button {
           margin: 0;
@@ -45,6 +45,7 @@
           height: 53px;
         }
       }
+
       img {
         justify-items: right;
         width: 333px;
@@ -59,18 +60,16 @@
     .app {
       max-width: 374px;
       text-align: center;
+
       .app-info {
         margin-top: 48px;
         flex-direction: column-reverse;
         row-gap: 16px;
+
         p {
           margin-top: 0;
         }
-        // .info-app-one {
-        //   // button {
-        //   //   margin-top: 16;
-        //   // }
-        // }
+
         img {
           display: block;
           margin: 0 auto;

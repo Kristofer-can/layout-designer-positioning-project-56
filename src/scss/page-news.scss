@@ -1,47 +1,50 @@
-@import url("variables.scss");
-@import url("general.scss");
+@import url("variables");
+@import url("general");
 
 #pageee-news {
-  margin: 0px;
-  padding: 0px;
-  // width: 1440px;
-  // height: 842px;
+  margin: 0;
+  padding: 0;
   background-color: $base-color-background;
+
   .section-news {
-    // width: 1200px;
     padding-top: 100px;
-    margin-bottom: 0px;
-    // text-align: center;
-    // margin-left: 120px;
+    margin-bottom: 0;
+
     & * {
       margin: 0px;
       text-align: center;
       color: $color-text-white;
     }
+
     .new {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 50px;
       margin-top: 48px;
+
       .music-to-be {
         max-width: 575px;
         height: 286px;
       }
+
       .text-new {
         & * {
           text-align: left;
-          margin: 0px;
+          margin: 0;
         }
+
         .text-header {
           font-family: Roboto;
           font-size: 30px;
           font-weight: 400;
           line-height: 45px;
         }
+
         .text-midle {
           color: $base-color-text;
           margin-top: 30px;
         }
+
         .date-music {
           margin-top: 24px;
           width: 186px;
@@ -52,24 +55,28 @@
           justify-content: space-between;
 
           & * {
-            margin: 0px;
+            margin: 0;
           }
 
           img {
             width: 19px;
             height: 19px;
           }
+
           .box {
             color: $background-color-orange;
           }
+
           .date {
             color: $base-color-text;
           }
         }
+
         .in-albom {
           text-align: left;
           margin-top: 48px;
         }
+
         .btn {
           box-sizing: border-box;
           width: 135px;
@@ -80,11 +87,13 @@
           border: 1px solid $base-color-text;
           text-align: left;
         }
+
         .text-small {
           font-size: 12px;
         }
       }
     }
+
     .one {
       margin-top: 65px;
     }
@@ -95,29 +104,32 @@
     .section-news {
       .new {
         grid-template-columns: 1fr;
-        // height: 492px;
+
         .music-to-be {
           max-width: 374px;
-          // height: 186px;
         }
+
         .text-new {
           .text-header {
             font-size: 16px;
             line-height: 24px;
             margin-top: 50px;
           }
+
           .text-midle {
             color: $base-color-text;
             margin-top: 16px;
           }
+
           .date-music {
             margin-top: 24px;
             max-width: 187px;
-            // height: 19px;
           }
+
           .two {
             margin-top: 16px;
           }
+
           .in-albom {
             text-align: left;
           }
@@ -126,24 +138,25 @@
             box-sizing: border-box;
             width: 135px;
             height: 53px;
-            // margin-top: 48px;
             padding: 16px 30px;
             color: $base-color-text;
             border: 1px solid $base-color-text;
             text-align: left;
           }
+
           .text-small {
             font-size: 12px;
           }
         }
+
         .music-to-be {
           max-width: 374px;
           height: 187px;
         }
       }
+
       .one {
         margin-top: 64px;
-        // height: 485px;
         display: flex;
         flex-direction: column-reverse;
       }
